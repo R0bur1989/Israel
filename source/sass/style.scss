@@ -1,7 +1,7 @@
 @import "fonts";
-
-
-body {
-  font-family: "Raleway", "Arial", sans-serif;
-  font-weight: 700;
-}
+@import "variables";
+@import "mixins";
+@import "general";
+@import "blocks/page-header";
+@import "blocks/main-menu";
+@import "blocks/intro";

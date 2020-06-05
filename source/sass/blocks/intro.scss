@@ -1,0 +1,31 @@
+.intro {
+  padding-top: 446px;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 272px;
+  }
+}
+
+.intro p {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  max-width: 343px;
+  margin: 0 auto 32px auto;
+
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+  }
+}
+
+.intro__scroll {
+  display: block;
+  margin: 0 auto;
+  max-width: 76px;
+  min-height: 131.5px;
+  background-image: url("../../img/icon-mouseScroll.svg");
+}
