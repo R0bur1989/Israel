@@ -35,6 +35,32 @@
   }
 }
 
+.modal--accepted {
+  padding: 216px 60px 112px 60px;
+  text-align: center;
+
+  &::after {
+    content: "";
+    width: 71px;
+    height: 64px;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("../../img/icon-checkmark.svg");
+    background-repeat: no-repeat;
+
+    @media (max-width: $mobile-width) {
+      top: 200px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 295px 16px;
+  }
+}
+
 .modal-show {
   display: block;
 }
@@ -96,10 +122,14 @@
   font-size: 0;
 }
 
-.modal__form .button {
+.modal .button {
   margin: 16px auto 0 auto;
-  min-width: 264px;
+  width: 264px;
   padding: 19px 20px 20px 20px;
+}
+
+.modal--accepted .button {
+  margin: 0 auto;
 }
 
 .modal__form label {
