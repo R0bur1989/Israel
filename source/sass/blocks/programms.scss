@@ -1,0 +1,78 @@
+.programms {
+  background-image: url("../../img/programmsSketch.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.programms__wrapper {
+  max-width: 852px;
+  margin-left: 15%;
+}
+
+.programms__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.programms h2 {
+  color: $heading-text-color;
+  font-family: $heading-font-stack;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.225;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin: 0 0 83px 0;
+}
+
+.programms h3 {
+  color: $heading-text-color;
+  font-family: $heading-font-stack;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.214;
+  letter-spacing: -0.02em;
+  margin: 0 0 24px 0;
+}
+
+.programms p {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.87;
+}
+
+.programms__tabs {
+  @include list-reset();
+  flex-basis: 27%;
+}
+
+.programms__tab {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #484848;
+  opacity: 0.87;
+  padding: 16px 41px 16px 20px;
+  cursor: pointer;
+
+  &--active {
+    background-image: $gradient;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.programms__info {
+  flex-basis: 65%;
+}
