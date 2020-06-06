@@ -2,16 +2,33 @@
   background-image: url("../../img/programmsSketch.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
+  padding-top: 48px;
+  margin-bottom: 240px;
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../../img/programmsSketch-mobile.png");
+    background-position: 100% 118px;
+    padding-top: 0;
+    margin-bottom: 80px;
+  }
 }
 
 .programms__wrapper {
   max-width: 852px;
   margin-left: 15%;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
 }
 
 .programms__container {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
 }
 
 .programms h2 {
@@ -23,6 +40,12 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   margin: 0 0 83px 0;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+    font-size: 32px;
+    margin: 0 0 16px 0;
+  }
 }
 
 .programms h3 {
@@ -39,11 +62,23 @@
   font-size: 15px;
   line-height: 1.7;
   opacity: 0.87;
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 1.6;
+  }
 }
 
 .programms__tabs {
   @include list-reset();
   flex-basis: 27%;
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
 }
 
 .programms__tab {
@@ -62,6 +97,10 @@
   padding: 16px 41px 16px 20px;
   cursor: pointer;
 
+  @media (max-width: $mobile-width) {
+    padding: 8px 12px;
+  }
+
   &--active {
     background-image: $gradient;
     font-weight: 500;
@@ -70,9 +109,26 @@
     color: #ffffff;
     text-transform: uppercase;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+
+    @media (max-width: $mobile-width) {
+      min-width: 181px;
+      min-height: 48px;
+      border-radius: 60px;
+    }
+  }
+}
+
+.programms__tab svg {
+  @media (max-width: $mobile-width) {
+    width: 32px;
+    height: 32px;
   }
 }
 
 .programms__info {
   flex-basis: 65%;
+
+  @media (max-width: $mobile-width) {
+    padding: 0 16px;
+  }
 }
