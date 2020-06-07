@@ -1,0 +1,58 @@
+.reply {
+  min-height: 594px;
+  padding-top: 209px;
+  background-image: url("../../img/girl-flag-bg.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.reply__wrapper {
+  max-width: 477px;
+  margin-left: 15%;
+}
+
+.reply h2 {
+  color: $heading-text-color;
+  font-family: $heading-font-stack;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.225;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin: 0 0 24px 0;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+    font-size: 32px;
+  }
+}
+
+.reply p {
+  font-size: 17px;
+  line-height: 1.7;
+  opacity: 0.87;
+  margin: 0 0 64px 0;
+  max-width: 400px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 24px 0;
+  }
+}
+
+.reply__form {
+  display: flex;
+}
+
+.reply input {
+  border: 2px solid #e3e3e3;
+  border-radius: 80px;
+  padding: 17px 40px 18px 40px;
+  font-family: $font-stack;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #484848;
+  opacity: 0.5;
+}
