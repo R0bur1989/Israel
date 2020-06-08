@@ -1,14 +1,26 @@
 .reply {
   min-height: 594px;
   padding-top: 209px;
-  background-image: url("../../img/girl-flag-bg.png");
+  background-image: url("../../img/backpack.png"), url("../../img/girl-flag-bg.png");
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: 0 134px, 100% 0;
+
+  @media (max-width: $mobile-width) {
+    min-height: 647px;
+    padding-top: 48px;
+    background-image: url("../../img/backpack-mobile.png"), url("../../img/girl-flag-bg-mobile.png");
+    background-position: 0 0, center 100%;
+  }
 }
 
 .reply__wrapper {
   max-width: 477px;
   margin-left: 15%;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .reply h2 {
@@ -35,24 +47,52 @@
   max-width: 400px;
 
   @media (max-width: $mobile-width) {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
-    margin: 0 0 24px 0;
+    margin: 0 auto 24px auto;
+    padding: 0 17px;
   }
 }
 
 .reply__form {
+  position: relative;
   display: flex;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    padding: 0 16px 0 16px;
+  }
 }
 
 .reply input {
   border: 2px solid #e3e3e3;
   border-radius: 80px;
-  padding: 17px 40px 18px 40px;
+  padding: 17px 216px 18px 40px;
   font-family: $font-stack;
   font-size: 17px;
+  font-weight: 500;
   line-height: 20px;
   text-transform: uppercase;
   color: #484848;
   opacity: 0.5;
+
+  width: 100%;
+
+  @media (max-width: $mobile-width) {
+    padding: 19px 40px 20px 40px;
+    margin-bottom: 8px;
+  }
+}
+
+.reply .button {
+  padding: 19px 30px 20px 30px;
+  width: 216px;
+  position: absolute;
+  right: 0;
+
+  @media (max-width: $mobile-width) {
+    position: static;
+    width: 264px;
+    margin: 0 auto;
+  }
 }
