@@ -1,0 +1,96 @@
+.how {
+  background-image: url("../../img/howtogo.png"),
+    url("../../img/stamp.png"),
+    url("../../img/howBg.png");
+  background-position: 0 108px, 100% 276px, 0 -100px;
+  background-repeat: no-repeat;
+  min-height: 860px;
+  padding-top: 108px;
+  margin-bottom: 160px;
+
+  @media (max-width: $mobile-width) {
+    min-height: 738px;
+    padding-top: 0;
+    background-image: url("../../img/stamp-mobile.png");
+    background-position: 100% 275px;
+  }
+}
+
+.how__wrapper {
+  max-width: 552px;
+  margin-left: 50%;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
+}
+
+.how h2 {
+  color: $heading-text-color;
+  font-family: $heading-font-stack;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.225;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin: 0 0 24px 0;
+  padding-left: 19px;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+.how__description {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.87;
+  margin: 0 0 32px 0;
+  padding-left: 19px;
+  max-width: 499px;
+}
+
+.how b {
+  display: block;
+  max-width: 480px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 170%;
+  margin: 0 0 24px 0;
+  padding-left: 19px;
+}
+
+.how__list {
+  @include list-reset();
+  margin-bottom: 8px;
+}
+
+.how__item {
+  position: relative;
+  font-size: 15px;
+  line-height: 1.4;
+  opacity: 0.87;
+  margin-bottom: 40px;
+  padding-left: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    left: 0;
+    top: -9px;
+  }
+}
+
+.how__info {
+  font-size: 15px;
+  line-height: 1.4;
+  opacity: 0.5;
+}
