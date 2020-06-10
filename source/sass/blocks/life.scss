@@ -1,0 +1,34 @@
+.life {
+  h2 {
+    color: $heading-text-color;
+    font-family: $heading-font-stack;
+    font-size: 40px;
+    line-height: 1.225;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+    text-align: center;
+
+    @media (max-width: $mobile-width) {
+      font-size: 32px;
+    }
+  }
+
+  p {
+    max-width: 720px;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (max-width: $mobile-width) {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  }
+}
+
+.life__wrapper {
+  width: 84.5%;
+  margin: 0 auto;
+}

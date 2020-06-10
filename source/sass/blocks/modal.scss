@@ -1,11 +1,14 @@
 .modal {
   position: fixed;
-  top: 10vh;
-  left: calc(50vw - 220px);
+  margin: auto;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 0);
   display: none;
   width: 480px;
   min-height: 521px;
-  margin: auto;
   padding: 56px 72px 40px 48px;
   background: #ffffff;
   border-radius: 8px;
