@@ -1,12 +1,12 @@
 .programms {
-  background-image: url("../../img/programmsSketch.png");
+  background-image: url("../img/programmsSketch.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
   padding-top: 48px;
   margin-bottom: 31px;
 
   @media (max-width: $mobile-width) {
-    background-image: url("../../img/programmsSketch-mobile.png");
+    background-image: url("../img/programmsSketch-mobile.png");
     background-position: 100% 118px;
     padding-top: 0;
     margin-bottom: 18px;

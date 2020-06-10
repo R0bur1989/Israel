@@ -1,0 +1,28 @@
+.slider {
+  @include list-reset();
+  width: 64px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.slider__item {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #484848;
+  opacity: 0.2;
+  cursor: pointer;
+
+  &--active {
+    width: 8px;
+    height: 8px;
+    background-image: linear-gradient(108.42deg, #ffc341 20.46%, #ffd701 65.31%);
+    opacity: 1;
+  }
+}

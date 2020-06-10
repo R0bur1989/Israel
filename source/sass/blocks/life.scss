@@ -1,4 +1,14 @@
 .life {
+  background-image: url("../img/watch.png"), url("../img/lifeBg.png");
+  background-repeat: no-repeat;
+  background-position: 100% 615px, -15px -40px;
+  margin-bottom: 96px;
+
+  @media (max-width: $mobile-width) {
+    background-image: none;
+    margin-bottom: 80px;
+  }
+
   h2 {
     color: $heading-text-color;
     font-family: $heading-font-stack;
@@ -11,24 +21,43 @@
 
     @media (max-width: $mobile-width) {
       font-size: 32px;
+      margin: 0 0 24px 0;
     }
   }
 
-  p {
-    max-width: 720px;
-    font-size: 17px;
-    line-height: 1.7;
-    margin: 0 auto;
-    text-align: center;
+  br {
+    display: none;
 
     @media (max-width: $mobile-width) {
-      font-size: 16px;
-      line-height: 1.6;
+      display: block;
     }
   }
 }
 
 .life__wrapper {
-  width: 84.5%;
+  width: 85%;
   margin: 0 auto;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+
+.life__wrapper > p {
+  position: relative;
+  max-width: 720px;
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0 auto 32px auto;
+  text-align: center;
+  z-index: 1;
+  opacity: 0.87;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: initial;
+    margin: 0 auto 24px auto;
+  }
 }

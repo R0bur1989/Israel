@@ -21,7 +21,7 @@
     position: absolute;
     top: 32px;
     right: 32px;
-    background-image: url("../../img/icon-close.svg");
+    background-image: url("../img/icon-close.svg");
     cursor: pointer;
 
     @media (max-width: $mobile-width) {
@@ -51,7 +51,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    background-image: url("../../img/icon-checkmark.svg");
+    background-image: url("../img/icon-checkmark.svg");
     background-repeat: no-repeat;
 
     @media (max-width: $mobile-width) {
@@ -152,7 +152,7 @@
     height: 16px;
     top: 0;
     left: 0;
-    background-image: url("../../img/icon-checkbox.svg");
+    background-image: url("../img/icon-checkbox.svg");
     background-repeat: no-repeat;
   }
 }

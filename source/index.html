@@ -98,32 +98,53 @@
     </section>
     <section class="life">
       <div class="life__wrapper">
-        <h2>Жизнь в израиле</h2>
+        <h2>Жизнь<br> в израиле</h2>
         <p>Помимо учёбы, в рамках программе у вас будет возможность путешествовать по стране
            и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
+           <div class="gallery">
+            <div class="gallery__main-photo">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/excursion.png" />
+                <img src="img/excursion-mobile.png" alt="">
+              </picture>
+              <p>Экскурсии по Израилю<br> и знакомство с его историей</p>
+              <ul class="slider">
+                <li class="slider__item slider__item--active"></li>
+                <li class="slider__item"></li>
+                <li class="slider__item"></li>
+                <li class="slider__item"></li>
+                <li class="slider__item"></li>
+              </ul>
+            </div>
+            <ul class="gallery__photos">
+              <li class="gallery__item gallery__item--small">
+                <img src="img/Hebrew.png" alt="">
+                <p>Изучение иврита</p>
+              </li>
+              <li class="gallery__item gallery__item--large">
+                <img src="img/profession.png" alt="">
+                <p>Обучение современным навыкам и профессиям</p>
+              </li>
+              <li class="gallery__item gallery__item--large gallery__item--art">
+                <img src="img/artprojects.png" alt="">
+                <p>Совместные творческие проекты с израильской молодёжью</p>
+              </li>
+              <li class="gallery__item gallery__item--small">
+                <img src="img/leadership.png" alt="">
+                <p>Развитие лидерства</p>
+              </li>
+            </ul>
+          </div>
       </div>
-      <div class="gallery">
-        <div class="gallery__main-photo">
-          <img src="img/excursion.jpg" alt="">
-          <p>Экскурсии по Израилю и знакомство с его историей</p></div>
-        <ul class="gallery__photos">
-          <li class="gallery__item">
-            <img src="img/Hebrew.jpg" alt="">
-            <p>Изучение иврита</p>
-          </li>
-          <li class="gallery__item">
-            <img src="img/profession.jpg" alt="">
-            <p>Обучение современным навыкам и профессиям</p>
-          </li>
-          <li class="gallery__item">
-            <img src="img/artprojects.jpg" alt="">
-            <p>Совместные творческие проекты с израильской молодёжью</p>
-          </li>
-          <li class="gallery__item">
-            <img src="img/leadership.jpg" alt="">
-            <p>Развитие лидерства</p>
-          </li>
-        </ul>
+    </section>
+    <section class="photo">
+      <div class="photo__wrapper">
+        <h2>#masaisrael</h2>
+        <p>Познакомьтесь с программой от первого лица! Многие участники ведут блоги и фотодневники о жизни, учёбе и путешествиях в Израиле.</p>
+          <a href="" class="button"><svg class="photo__icon" width="24" height="24">
+            <use xlink:href="#icon-instagram"></use>
+          </svg>
+          <span>смотреть фото</span></a>
       </div>
     </section>
   </main>

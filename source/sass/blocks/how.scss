@@ -1,7 +1,7 @@
 .how {
-  background-image: url("../../img/howtogo.png"),
-    url("../../img/stamp.png"),
-    url("../../img/howBg.png");
+  background-image: url("../img/howtogo.png"),
+    url("../img/stamp.png"),
+    url("../img/howBg.png");
   background-position: 0 108px, 100% 276px, 0 -100px;
   background-repeat: no-repeat;
   min-height: 860px;
@@ -9,10 +9,10 @@
   margin-bottom: 160px;
 
   @media (max-width: $mobile-width) {
-    min-height: 738px;
+    min-height: initial;
     padding-top: 0;
     margin-bottom: 80px;
-    background-image: url("../../img/stamp-mobile.png");
+    background-image: url("../img/stamp-mobile.png");
     background-position: 100% 275px;
   }
 
@@ -156,6 +156,7 @@
   line-height: 1.4;
   opacity: 0.5;
   padding-left: 31px;
+  margin: 0;
 
   @media (max-width: $mobile-width) {
     font-size: 14px;
@@ -168,6 +169,6 @@
     width: 4px;
     height: 100%;
     left: 18px;
-    background-image: url("../../img/Vector.svg");
+    background-image: url("../img/Vector.svg");
   }
 }

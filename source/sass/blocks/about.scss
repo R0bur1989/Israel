@@ -1,11 +1,11 @@
 .about {
-  background-image: url("../../img/aboutBg.png");
+  background-image: url("../img/aboutBg.png");
   background-repeat: no-repeat;
   background-position: center 160px;
   padding-bottom: 152px;
 
   @media (max-width: $mobile-width) {
-    background-image: url("../../img/aboutBg-mobile.png");
+    background-image: url("../img/aboutBg-mobile.png");
     background-position: center 60%;
     padding-bottom: 0;
     margin-bottom: 80px;
@@ -50,12 +50,12 @@
 .about__video {
   position: relative;
   min-height: 460px;
-  background-image: url("../../img/photo_about.png");
+  background-image: url("../img/photo_about.png");
   background-repeat: no-repeat;
 
   @media (max-width: $mobile-width) {
     min-height: 224px;
-    background-image: url("../../img/photo_about-mobile.png");
+    background-image: url("../img/photo_about-mobile.png");
     background-position: center 0;
   }
 }

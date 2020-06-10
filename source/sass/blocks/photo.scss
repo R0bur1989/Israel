@@ -1,0 +1,76 @@
+.photo {
+  min-height: 583px;
+  padding-top: 120px;
+  margin-bottom: 136px;
+  background-image: url("../img/photoBg.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+
+  @media (max-width: $mobile-width) {
+    min-height: initial;
+    margin-bottom: 80px;
+    padding-top: 0;
+    background-image: url("../img/photoBg-mobile.png");
+    background-position: center 47px;
+  }
+
+  h2 {
+    color: $heading-text-color;
+    font-family: $heading-font-stack;
+    font-size: 40px;
+    line-height: 1.225;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin: 0 0 24px 0;
+
+    @media (max-width: $mobile-width) {
+      margin: 0 0 96px 0;
+      text-align: center;
+    }
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #ffffff;
+    opacity: 0.87;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    margin: 0 0 48px 0;
+
+    @media (max-width: $mobile-width) {
+      margin: 0 auto 57px auto;
+      max-width: 272px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    text-decoration: none;
+    padding: 18px 30px 17px 30px;
+    margin: 0 auto;
+
+    @media (max-width: $mobile-width) {
+      width: 264px;
+    }
+  }
+}
+
+.photo__wrapper {
+  max-width: 403px;
+  margin-left: calc(72% - 201.5px);
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto;
+  }
+}
+
+.photo__icon {
+  margin-right: 8px;
+  flex: 0 0 auto;
+  fill: #ffffff;
+}
