@@ -1,0 +1,115 @@
+.faq {
+  padding: 79px 0 124px 110px;
+  background-image: url("../../img/bag.png"),
+    url("../img/faqBg.png"),
+    url("../img/faqWatercolorBg.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 0 727px, 100% 79px, 0 0;
+
+  @media (max-width: 1300px) {
+    background-image: url("../../img/bag.png");
+    background-repeat: no-repeat;
+    background-position: 0 727px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 16px 80px 16px;
+    background-position: 0 660px;
+  }
+
+  h2 {
+    color: $heading-text-color;
+    font-family: $heading-font-stack;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.225;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin: 0 0 46px 0;
+
+    @media (max-width: $mobile-width) {
+      margin: 0 0 24px 0;
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+
+  b {
+    display: block;
+    line-height: 1.5;
+    font-weight: normal;
+    padding-left: 28px;
+    padding-right: 55px;
+
+    @media (max-width: $mobile-width) {
+      max-width: 291px;
+      font-size: 16px;
+      line-height: 1.6;
+      padding-left: 25px;
+      padding-right: 31px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 17px;
+      height: 11px;
+      background-image: url("../../img/arrow-down.svg");
+      background-repeat: no-repeat;
+      right: 37px;
+      top: 9px;
+      margin: auto;
+
+      @media (max-width: $mobile-width) {
+        right: 0;
+      }
+    }
+  }
+
+  p {
+    display: none;
+    font-size: 15px;
+    line-height: 1.4;
+    opacity: 0.74;
+    margin: 24px 0 0 0;
+
+    @media (max-width: $mobile-width) {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  }
+}
+
+.faq__wrapper {
+  max-width: 562px;
+}
+
+.faq__list {
+  @include list-reset();
+  counter-reset: questions;
+}
+
+.faq__item {
+  position: relative;
+  padding-bottom: 32px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(72, 72, 72, 0.2);
+  counter-increment: questions;
+  cursor: pointer;
+
+  &::before {
+    content: counter(questions);
+    position: absolute;
+    width: 13px;
+    height: 48px;
+    left: 0;
+    top: -15px;
+    margin: auto;
+
+    font-family: $font-stack;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.7;
+    color: $secondary-color;
+  }
+}
