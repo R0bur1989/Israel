@@ -1,5 +1,7 @@
 .faq {
   padding: 79px 0 124px 110px;
+  min-height: 993px;
+
   background-image: url("../../img/bag.png"),
     url("../img/faqBg.png"),
     url("../img/faqWatercolorBg.png");
@@ -12,8 +14,12 @@
     background-position: 0 727px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding: 0 16px 80px 16px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 900px;
     background-position: 0 660px;
   }
 
@@ -82,6 +88,10 @@
 
 .faq__wrapper {
   max-width: 562px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .faq__list {

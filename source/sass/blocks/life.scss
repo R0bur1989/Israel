@@ -36,6 +36,7 @@
 
 .life__wrapper {
   width: 85%;
+  max-width: 1152px;
   margin: 0 auto;
 
   @media (max-width: $mobile-width) {
