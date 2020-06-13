@@ -1,0 +1,127 @@
+.details {
+  padding-top: 81px;
+  padding-left: 110px;
+  background-image: url("../img/map.png"), url("../img/detailsBg.png");
+  background-repeat: no-repeat;
+  background-position: 100% 96px, 0 0;
+
+  h2 {
+    color: $heading-text-color;
+    font-family: $heading-font-stack;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.225;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin: 0 0 48px 0;
+
+    @media (max-width: $mobile-width) {
+      margin: 0 0 24px 0;
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+
+  p {
+    opacity: 0.74;
+    line-height: 1.7;
+  }
+}
+
+.details__wrapper {
+  max-width: 520px;
+  margin-bottom: 128px;
+}
+
+.details__wrapper > p {
+  max-width: 480px;
+}
+
+.details__city {
+  position: relative;
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 0.74;
+  padding-left: 18px;
+  margin: 0 0 39px 0;
+
+  a {
+    position: relative;
+    font-weight: 500;
+    font-variant: small-caps;
+    border-bottom: 1px dashed $heading-text-color;
+    margin-left: 16px;
+    color: unset;
+    text-decoration: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 15px;
+      right: -25px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background-image: url("../img/gps.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 18px;
+    left: 0;
+    top: 0;
+    background-image: url("../img/marker.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.details__container {
+  display: flex;
+  margin-bottom: 32px;
+
+  p {
+    line-height: 1.5;
+  }
+}
+
+.details__info {
+  max-width: 268px;
+  font-size: 13px;
+
+  p:last-of-type {
+    margin: 0 0 10px 0;
+  }
+}
+
+.details__curator {
+  font-size: 15px;
+  margin: 0 0 12px 0;
+
+  span {
+    color: $heading-text-color;
+    opacity: 1;
+    margin-right: 8px;
+  }
+}
+
+.details__form {
+  max-width: 1142px;
+  display: flex;
+
+  small {
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: 0.5;
+  }
+
+  p {
+    display: block;
+    font-size: 17px;
+    opacity: 0.87;
+  }
+}
