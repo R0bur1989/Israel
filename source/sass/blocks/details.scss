@@ -1,9 +1,8 @@
 .details {
-  padding-top: 81px;
-  padding-left: 110px;
+  padding: 81px 0 72px 110px;
   background-image: url("../img/map.png"), url("../img/detailsBg.png");
   background-repeat: no-repeat;
-  background-position: 100% 96px, 0 0;
+  background-position: 100% 96px, 0 -5px;
 
   h2 {
     color: $heading-text-color;
@@ -87,6 +86,10 @@
   p {
     line-height: 1.5;
   }
+
+  img {
+    margin-right: 20px;
+  }
 }
 
 .details__info {
@@ -112,16 +115,44 @@
 .details__form {
   max-width: 1142px;
   display: flex;
+  align-items: flex-start;
 
   small {
     font-size: 13px;
     line-height: 1.5;
     opacity: 0.5;
+    max-width: 364px;
   }
 
   p {
     display: block;
     font-size: 17px;
     opacity: 0.87;
+    max-width: 328px;
+    margin: 0 0 12px 0;
+  }
+
+  input {
+    width: 250px;
+    min-height: 59px;
+    border: 2px solid #e3e3e3;
+    padding: 17px 40px 18px 40px;
+    border-radius: 80px;
+    margin-right: 24px;
+
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    font-variant: small-caps;
+
+    color: #484848;
+    opacity: 0.5;
+  }
+
+  .button {
+    min-height: 59px;
+    padding: 17px 30px 18px 30px;
+    font-variant: small-caps;
+    flex: 0 0 216px;
   }
 }
