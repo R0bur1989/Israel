@@ -6,6 +6,11 @@
   background-repeat: no-repeat;
   background-position: 0 134px, 100% 0;
 
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/backpack-mobile.png"), url("../img/girl-flag-bg-mobile.png");
+    background-position: 0 0, 100% 209px;
+  }
+
   @media (max-width: $mobile-width) {
     min-height: 679px;
     padding-top: 48px;

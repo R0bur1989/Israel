@@ -6,7 +6,7 @@
   margin-bottom: 23px;
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 78px;
+    margin-bottom: 0;
     background-image: url("../img/feedbackSketch-mobile.png"),
       url("../../img/feedbackBg-mobile.png");
     background-position: 100% 526px, 100% 686px;
