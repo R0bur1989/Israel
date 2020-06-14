@@ -81,6 +81,14 @@
     padding: 18.33px 18.33px 19.17px 22.5px;
     box-shadow: 0 0 0 13.33px rgba(255, 255, 255, 0.32);
   }
+
+  &:hover {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05), 0 0 0 16px rgba(255, 255, 255, 0.32);
+  }
+
+  &:active {
+    background-color: #f4f4f4;
+  }
 }
 
 .about__video-link svg {

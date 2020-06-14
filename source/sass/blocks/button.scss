@@ -1,8 +1,7 @@
 .button {
   display: block;
-  background-color: none;
   border: none;
-  background-image: $gradient;
+  background: $gradient;
   min-width: 181px;
   min-height: 48px;
   padding: 15px 12px 14px 12px;
@@ -18,4 +17,12 @@
   color: #ffffff;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%);
+  }
+
+  &:active {
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, $gradient -50.3%, #ffd701 63.1%);
+  }
 }

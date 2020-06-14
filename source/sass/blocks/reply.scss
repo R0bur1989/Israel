@@ -89,6 +89,11 @@
     padding: 19px 40px 20px 40px;
     margin-bottom: 8px;
   }
+
+  &:focus {
+    outline: none;
+    border: 2px solid #ffc341;
+  }
 }
 
 .reply .button {

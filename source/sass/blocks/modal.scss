@@ -14,27 +14,66 @@
   border-radius: 8px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 
-  &::before {
-    content: "";
-    width: 18px;
-    height: 17px;
-    position: absolute;
-    top: 32px;
-    right: 32px;
-    background-image: url("../img/icon-close.svg");
-    cursor: pointer;
+  @media (max-width: $mobile-width) {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: initial;
+    transform: none;
+    width: 100%;
+    padding: 169px 16px;
+  }
+
+  h2 {
+    color: $heading-text-color;
+    font-family: $heading-font-stack;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    margin: 0 0 16px 0;
 
     @media (max-width: $mobile-width) {
-      top: 24px;
-      right: 24px;
+      font-size: 24px;
+      text-align: center;
     }
   }
 
+  p {
+    font-size: 15px;
+    line-height: 1.7;
+    opacity: 0.87;
+    margin: 0 0 32px 0;
+
+    @media (max-width: $mobile-width) {
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: center;
+    }
+  }
+
+  .button {
+    margin: 16px auto 0 auto;
+    width: 264px;
+    padding: 19px 20px 20px 20px;
+  }
+}
+
+.modal__close-button {
+  background-color: transparent;
+  border: none;
+  width: 18px;
+  height: 17px;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  background-image: url("../img/icon-close.svg");
+  cursor: pointer;
+
   @media (max-width: $mobile-width) {
-    width: 100%;
-    padding: 169px 16px;
-    top: 0;
-    left: 0;
+    top: 24px;
+    right: 24px;
   }
 }
 
@@ -68,52 +107,48 @@
   display: block;
 }
 
-.modal h2 {
-  color: $heading-text-color;
-  font-family: $heading-font-stack;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 34px;
-  letter-spacing: -0.02em;
-  margin: 0 0 16px 0;
-
-  @media (max-width: $mobile-width) {
-    font-size: 24px;
-    text-align: center;
-  }
-}
-
-.modal p {
-  font-size: 15px;
-  line-height: 1.7;
-  opacity: 0.87;
-  margin: 0 0 32px 0;
-
-  @media (max-width: $mobile-width) {
-    font-size: 14px;
-    line-height: 1.6;
-    text-align: center;
-  }
-}
-
 .modal__form {
   display: flex;
   flex-wrap: wrap;
-}
 
-.modal__form input {
-  flex-basis: 100%;
-  border: 2px solid #e3e3e3;
-  border-radius: 80px;
-  padding: 17px 40px 18px 40px;
-  margin-bottom: 8px;
+  input {
+    flex-basis: 100%;
+    border: 2px solid #e3e3e3;
+    border-radius: 80px;
+    padding: 17px 40px 18px 40px;
+    margin-bottom: 8px;
+    font-size: 17px;
+    line-height: 20px;
+    font-variant: small-caps;
+    opacity: 0.5;
 
-  font-size: 17px;
-  line-height: 20px;
-  font-variant: small-caps;
+  &:focus {
+    outline: none;
+    border: 2px solid #ffc341;
+  }
+  }
 
-  opacity: 0.5;
+  label {
+    position: relative;
+    max-width: 264px;
+    margin: 16px auto 0 auto;
+    padding-left: 25px;
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: 0.74;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      top: 0;
+      left: 0;
+      background-image: url("../img/icon-checkbox.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .modal__form input[type="checkbox"] {
@@ -125,34 +160,6 @@
   font-size: 0;
 }
 
-.modal .button {
-  margin: 16px auto 0 auto;
-  width: 264px;
-  padding: 19px 20px 20px 20px;
-}
-
 .modal--accepted .button {
   margin: 0 auto;
-}
-
-.modal__form label {
-  position: relative;
-  max-width: 264px;
-  margin: 16px auto 0 auto;
-  padding-left: 25px;
-  font-size: 13px;
-  line-height: 1.5;
-  opacity: 0.74;
-  cursor: pointer;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 16px;
-    top: 0;
-    left: 0;
-    background-image: url("../img/icon-checkbox.svg");
-    background-repeat: no-repeat;
-  }
 }
