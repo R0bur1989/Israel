@@ -1,10 +1,10 @@
 .reply {
   min-height: 594px;
-  padding-top: 209px;
-  margin-bottom: 52px;
+  padding-top: 195px;
+  margin-bottom: 70px;
   background-image: url("../img/backpack.png"), url("../img/girl-flag-bg.png");
   background-repeat: no-repeat;
-  background-position: 0 134px, 100% 0;
+  background-position: 0 134px, calc(100% + 15px) -14px;
 
   @media (max-width: $tablet-width) {
     background-image: url("../img/backpack-mobile.png"),
@@ -29,7 +29,7 @@
     line-height: 1.225;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    margin: 0 0 24px 0;
+    margin: 0 0 26px 0;
 
     @media (max-width: $mobile-width) {
       text-align: center;
@@ -41,7 +41,7 @@
     font-size: 17px;
     line-height: 1.7;
     opacity: 0.87;
-    margin: 0 0 64px 0;
+    margin: 0 0 66px 0;
     max-width: 400px;
 
     @media (max-width: $mobile-width) {
@@ -68,7 +68,7 @@
 
 .reply__wrapper {
   max-width: 477px;
-  margin-left: 15%;
+  margin-left: 15.5%;
 
   @media (max-width: $mobile-width) {
     width: 100%;

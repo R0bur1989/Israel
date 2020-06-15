@@ -20,7 +20,7 @@
     line-height: 1.225;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    margin: 0 0 83px 0;
+    margin: 0 0 85px 0;
 
     @media (max-width: $mobile-width) {
       text-align: center;
@@ -52,7 +52,7 @@
 }
 
 .programms__wrapper {
-  max-width: 852px;
+  max-width: 910px;
   margin-left: 15%;
 
   @media (max-width: $mobile-width) {
@@ -266,6 +266,19 @@
 
 .programms__info {
   flex-basis: 67%;
+
+  p {
+    max-width: 554px;
+    margin: 15px 0 19px 0;
+
+    &:last-of-type {
+      max-width: 510px;
+    }
+  }
+
+  h3 {
+    margin-bottom: 28px;
+  }
 
   @media (max-width: $mobile-width) {
     padding: 0 16px;

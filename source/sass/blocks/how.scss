@@ -2,11 +2,11 @@
   background-image: url("../img/howtogo.png"),
     url("../img/stamp.png"),
     url("../img/howBg.png");
-  background-position: 0 108px, 100% 276px, 0 -100px;
+  background-position: 10px 75px, 100% 276px, 0 -100px;
   background-repeat: no-repeat;
   min-height: 860px;
   padding-top: 108px;
-  margin-bottom: 160px;
+  margin-bottom: 84px;
 
   @media (max-width: $tablet-width) {
     max-width: 730px;
@@ -29,7 +29,7 @@
     line-height: 1.225;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    margin: 0 0 24px 0;
+    margin: 0 0 25px 0;
     padding-left: 19px;
 
     @media (max-width: $mobile-width) {
@@ -46,7 +46,7 @@
     font-weight: 500;
     font-size: 17px;
     line-height: 170%;
-    margin: 0 0 24px 0;
+    margin: 0 0 32px 0;
     padding-left: 19px;
 
     @media (max-width: $mobile-width) {
@@ -104,7 +104,7 @@
     position: absolute;
     width: 2px;
     height: 90%;
-    left: 18px;
+    left: 25px;
     opacity: 0.2;
     border-left: 1px dashed #484848;
 
@@ -125,14 +125,26 @@
   font-size: 15px;
   line-height: 1.4;
   opacity: 0.87;
-  margin-bottom: 40px;
-  padding-left: 60px;
+  margin-bottom: 55px;
+  padding-left: 65px;
   counter-increment: steps;
 
   @media (max-width: $mobile-width) {
     padding-left: 52px;
     font-size: 14px;
     line-height: 160%;
+  }
+
+  &:nth-of-type(n+2) {
+    margin-bottom: 45px;
+  }
+
+  &:nth-of-type(n+3) {
+    margin-bottom: 40px;
+  }
+
+  &:nth-of-type(n+4) {
+    margin-bottom: 48px;
   }
 
   &::before {
@@ -143,7 +155,7 @@
     border-radius: 50%;
     background: #ffffff;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
-    left: 0;
+    left: 8px;
     top: 0;
     bottom: 0;
     margin: auto;
