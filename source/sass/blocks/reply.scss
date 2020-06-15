@@ -7,7 +7,8 @@
   background-position: 0 134px, 100% 0;
 
   @media (max-width: $tablet-width) {
-    background-image: url("../img/backpack-mobile.png"), url("../img/girl-flag-bg-mobile.png");
+    background-image: url("../img/backpack-mobile.png"),
+      url("../img/girl-flag-bg-mobile.png");
     background-position: 0 0, 100% 209px;
   }
 
@@ -15,8 +16,53 @@
     min-height: 679px;
     padding-top: 48px;
     margin-bottom: 80px;
-    background-image: url("../img/backpack-mobile.png"), url("../img/girl-flag-bg-mobile.png");
+    background-image: url("../img/backpack-mobile.png"),
+      url("../img/girl-flag-bg-mobile.png");
     background-position: 0 0, center 100%;
+  }
+
+  h2 {
+    color: $heading-text-color;
+    font-family: $heading-font-stack;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.225;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin: 0 0 24px 0;
+
+    @media (max-width: $mobile-width) {
+      text-align: center;
+      font-size: 32px;
+    }
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 1.7;
+    opacity: 0.87;
+    margin: 0 0 64px 0;
+    max-width: 400px;
+
+    @media (max-width: $mobile-width) {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 auto 24px auto;
+      padding: 0 17px;
+    }
+  }
+
+  .button {
+    padding: 19px 30px 20px 30px;
+    width: 216px;
+    position: absolute;
+    right: 0;
+
+    @media (max-width: $mobile-width) {
+      position: static;
+      width: 264px;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -27,37 +73,6 @@
   @media (max-width: $mobile-width) {
     width: 100%;
     margin: 0 auto;
-  }
-}
-
-.reply h2 {
-  color: $heading-text-color;
-  font-family: $heading-font-stack;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 1.225;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  margin: 0 0 24px 0;
-
-  @media (max-width: $mobile-width) {
-    text-align: center;
-    font-size: 32px;
-  }
-}
-
-.reply p {
-  font-size: 17px;
-  line-height: 1.7;
-  opacity: 0.87;
-  margin: 0 0 64px 0;
-  max-width: 400px;
-
-  @media (max-width: $mobile-width) {
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 0 auto 24px auto;
-    padding: 0 17px;
   }
 }
 
@@ -121,19 +136,8 @@
   }
 
   &:not(:placeholder-shown):invalid + span {
-    display: block;
-  }
-}
-
-.reply .button {
-  padding: 19px 30px 20px 30px;
-  width: 216px;
-  position: absolute;
-  right: 0;
-
-  @media (max-width: $mobile-width) {
-    position: static;
-    width: 264px;
-    margin: 0 auto;
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 }

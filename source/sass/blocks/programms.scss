@@ -11,6 +11,44 @@
     padding-top: 0;
     margin-bottom: 18px;
   }
+
+  h2 {
+    color: $heading-text-color;
+    font-family: $heading-font-stack;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.225;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin: 0 0 83px 0;
+
+    @media (max-width: $mobile-width) {
+      text-align: center;
+      font-size: 32px;
+      margin: 0 0 16px 0;
+    }
+  }
+
+  h3 {
+    color: $heading-text-color;
+    font-family: $heading-font-stack;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.214;
+    letter-spacing: -0.02em;
+    margin: 0 0 24px 0;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.7;
+    opacity: 0.87;
+
+    @media (max-width: $mobile-width) {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  }
 }
 
 .programms__wrapper {
@@ -28,44 +66,6 @@
 
   @media (max-width: $mobile-width) {
     display: block;
-  }
-}
-
-.programms h2 {
-  color: $heading-text-color;
-  font-family: $heading-font-stack;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 1.225;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  margin: 0 0 83px 0;
-
-  @media (max-width: $mobile-width) {
-    text-align: center;
-    font-size: 32px;
-    margin: 0 0 16px 0;
-  }
-}
-
-.programms h3 {
-  color: $heading-text-color;
-  font-family: $heading-font-stack;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 1.214;
-  letter-spacing: -0.02em;
-  margin: 0 0 24px 0;
-}
-
-.programms p {
-  font-size: 15px;
-  line-height: 1.7;
-  opacity: 0.87;
-
-  @media (max-width: $mobile-width) {
-    font-size: 14px;
-    line-height: 1.6;
   }
 }
 
@@ -262,13 +262,6 @@
 
 .programms__tab--religion.programms__tab--active::before {
   background-image: url("../img/religion-active.png");
-}
-
-.programms__tab svg {
-  @media (max-width: $mobile-width) {
-    width: 32px;
-    height: 32px;
-  }
 }
 
 .programms__info {
