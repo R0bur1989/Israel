@@ -15,12 +15,16 @@
     position: absolute;
     bottom: 32px;
     left: 40px;
+    right: initial;
     max-width: 320px;
 
     @media (max-width: $mobile-width) {
       font-size: 18px;
       text-align: center;
-      left: 16px;
+      left: 0;
+      right: 0;
+      bottom: 50px;
+      margin: auto;
       max-width: 250px;
     }
   }

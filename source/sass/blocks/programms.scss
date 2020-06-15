@@ -95,17 +95,37 @@
   line-height: 1.2;
   color: #484848;
   opacity: 0.87;
-  padding: 16px 41px 16px 72px;
+  padding: 25px 41px 24px 72px;
   cursor: pointer;
+
+  @media (max-width: $mobile-width) {
+    padding: 15px 12px 14px 47px;
+  }
 
   &::before {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
+    top: 16px;
+
+    @media (max-width: $mobile-width) {
+      top: 8px;
+    }
   }
 
-  @media (max-width: $mobile-width) {
-    padding: 8px 12px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 0;
+    height: 0;
+    border: 34px solid white;
+    border-left-color: transparent;
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
   }
 
   &--culture::before {
@@ -113,7 +133,13 @@
     width: 28px;
     height: 33px;
     left: 22px;
-    top: 8px;
+
+    @media (max-width: $mobile-width) {
+      width: 32px;
+      height: 32px;
+      left: 12px;
+      background-size: contain;
+    }
   }
 
   &--study::before {
@@ -121,41 +147,68 @@
     height: 35px;
     background-image: url("../img/study.png");
     left: 20px;
-    top: 7px;
+
+    @media (max-width: $mobile-width) {
+      width: 32px;
+      height: 32px;
+      left: 12px;
+      background-size: contain;
+    }
   }
 
   &--business::before {
     width: 32px;
     height: 25px;
     background-image: url("../img/business.png");
-    top: 12px;
     left: 21px;
+    top: 18px;
+
+    @media (max-width: $mobile-width) {
+      width: 32px;
+      height: 32px;
+      top: 8px;
+      left: 12px;
+      background-size: contain;
+    }
   }
 
   &--volonteur::before {
     width: 32px;
     height: 29px;
     background-image: url("../img/volonteur.png");
-    top: 10px;
     left: 21px;
+
+    @media (max-width: $mobile-width) {
+      width: 32px;
+      height: 32px;
+      left: 12px;
+      background-size: contain;
+    }
   }
 
   &--religion::before {
     width: 23px;
     height: 25px;
     background-image: url("../img/religion.png");
-    top: 12px;
+    top: 18px;
     left: 25px;
+
+    @media (max-width: $mobile-width) {
+      width: 32px;
+      height: 32px;
+      top: 8px;
+      left: 12px;
+      background-size: contain;
+    }
   }
 
   &:not(.programms__tab--active):hover {
     color: $secondary-color;
   }
 
-
   &--active {
     background-image: $gradient;
-    min-width: 239px;
+    width: 228px;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -164,7 +217,7 @@
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 
     @media (max-width: $mobile-width) {
-      min-width: 181px;
+      width: 181px;
       min-height: 48px;
       border-radius: 60px;
     }
@@ -210,7 +263,6 @@
 .programms__tab--religion.programms__tab--active::before {
   background-image: url("../img/religion-active.png");
 }
-
 
 .programms__tab svg {
   @media (max-width: $mobile-width) {

@@ -45,17 +45,17 @@
         <h2>программы</h2>
         <div class="programms__container">
           <ul class="programms__tabs jsTabs">
-            <li class="programms__item"><button type="button" class="programms__tab programms__tab--culture">Общие</button></li>
-            <li class="programms__item"><button type="button" class="programms__tab programms__tab--study programms__tab--active">Академические</button></li>
-            <li class="programms__item"><button type="button" class="programms__tab programms__tab--business">Стажировки</button></li>
-            <li class="programms__item"><button type="button" class="programms__tab programms__tab--volonteur">Волонтёрство</button></li>
-            <li class="programms__item"><button type="button" class="programms__tab programms__tab--religion">Религиозные</button></li>
+            <li class="programms__item"><button type="button" class="programms__tab programms__tab--culture" data-info="culture">Общие</button></li>
+            <li class="programms__item"><button type="button" class="programms__tab programms__tab--study programms__tab--active" data-info="study">Академические</button></li>
+            <li class="programms__item"><button type="button" class="programms__tab programms__tab--business" data-info="business">Стажировки</button></li>
+            <li class="programms__item"><button type="button" class="programms__tab programms__tab--volonteur" data-info="volonteur">Волонтёрство</button></li>
+            <li class="programms__item"><button type="button" class="programms__tab programms__tab--religion" data-info="religion">Религиозные</button></li>
           </ul>
           <div class="programms__info">
-            <h3>Академические</h3>
-            <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни — вот что такое учеба за границей!
+            <h3 class="jsHeader">Академические</h3>
+            <p class="jsP1">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни — вот что такое учеба за границей!
               Израиль — это не только центр религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования.</p>
-              <p>Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+              <p class="jsP2">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
                 изучить все это в удивительной университетской среде.</p>
           </div>
         </div>
@@ -100,13 +100,13 @@
                 <source media="(min-width: 768px)" srcset="img/excursion.png" />
                 <img class="jsImg" src="img/excursion-mobile.png" alt="">
               </picture>
-              <p>Экскурсии по Израилю<br> и знакомство с его историей</p>
+              <p class="jsGalleryP">Экскурсии по Израилю<br> и знакомство с его историей</p>
               <ul class="slider">
-                <li class="slider__item slider__item--active"></li>
-                <li class="slider__item"></li>
-                <li class="slider__item"></li>
-                <li class="slider__item"></li>
-                <li class="slider__item"></li>
+                <li class="slider__item slider__item--active" data-info="excursion" tabindex="0"></li>
+                <li class="slider__item" data-info="Hebrew" tabindex="0"></li>
+                <li class="slider__item" data-info="profession" tabindex="0"></li>
+                <li class="slider__item" data-info="artprojects" tabindex="0"></li>
+                <li class="slider__item" data-info="leadership" tabindex="0"></li>
               </ul>
             </div>
             <ul class="gallery__photos">
