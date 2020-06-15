@@ -107,25 +107,55 @@
   display: block;
 }
 
+.modal__tel {
+  position: relative;
+  flex-basis: 100%;
+
+  span {
+    display: none;
+    position: absolute;
+    left: 22px;
+    bottom: -12px;
+    font-size: 13px;
+    line-height: 1.5;
+
+    color: #ff0000;
+    opacity: 0.75;
+  }
+}
+
 .modal__form {
   display: flex;
   flex-wrap: wrap;
 
   input {
-    flex-basis: 100%;
+    width: 100%;
     border: 2px solid #e3e3e3;
     border-radius: 80px;
     padding: 17px 40px 18px 40px;
     margin-bottom: 8px;
+    font-weight: 500;
     font-size: 17px;
     line-height: 20px;
     font-variant: small-caps;
-    opacity: 0.5;
-
-  &:focus {
+    opacity: 0.87;
     outline: none;
-    border: 2px solid #ffc341;
-  }
+
+    &:focus {
+      border: 2px solid #ffc341;
+    }
+
+    &:valid {
+      border: 2px solid #484848;
+    }
+
+    &:not(:placeholder-shown):invalid {
+      border: 2px solid #ff0000;
+    }
+
+    &:not(:placeholder-shown):invalid + span {
+      display: block;
+    }
   }
 
   label {
