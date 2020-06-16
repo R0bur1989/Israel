@@ -1,5 +1,5 @@
 (function () {
-  'use strict';
+  "use strict";
   var orderCallWindow = document.querySelector(".jsOrderCallWindow");
   var orderForm = document.querySelector(".modal__form");
   var replyForm = document.querySelector(".reply__form");
@@ -8,27 +8,26 @@
   var closeButton = document.querySelectorAll(".modal__close-button")[1];
   var closeButton2 = orderAccepted.querySelector(".button");
 
-
   if (orderForm) {
-    orderForm.addEventListener("submit", function(evt){
+    orderForm.addEventListener("submit", function (evt) {
       evt.preventDefault();
       orderCallWindow.classList.remove("modal-show");
       orderAccepted.classList.add("modal-show");
-    })
+    });
   }
 
   if (replyForm) {
-    replyForm.addEventListener("submit", function(evt){
+    replyForm.addEventListener("submit", function (evt) {
       evt.preventDefault();
       orderAccepted.classList.add("modal-show");
-    })
+    });
   }
 
-   if (detailsForm) {
-    detailsForm.addEventListener("submit", function(evt){
+  if (detailsForm) {
+    detailsForm.addEventListener("submit", function (evt) {
       evt.preventDefault();
       orderAccepted.classList.add("modal-show");
-    })
+    });
   }
 
   if (closeButton) {
@@ -50,4 +49,4 @@
       }
     }
   });
-  })();
+})();

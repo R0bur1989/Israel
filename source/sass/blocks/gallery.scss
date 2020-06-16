@@ -13,7 +13,7 @@
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
     margin: 0;
     position: absolute;
-    bottom: 32px;
+    bottom: 37px;
     left: 40px;
     right: initial;
     max-width: 320px;
@@ -33,8 +33,8 @@
 .gallery__main-photo {
   position: relative;
   flex-shrink: 0;
-  margin-right: 5px;
-  transform: translate(-13px, -49px);
+  margin-right: 17px;
+  transform: translate(3px, -67px);
 
   @media (max-width: $mobile-width) {
     font-size: 18px;
@@ -63,7 +63,7 @@
 
 .gallery__item {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   &--small {
     p {

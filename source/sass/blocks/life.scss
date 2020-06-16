@@ -2,7 +2,7 @@
   background-image: url("../img/watch.png"), url("../img/lifeBg.png");
   background-repeat: no-repeat;
   background-position: 100% 615px, -15px -40px;
-  margin-bottom: 96px;
+  margin-bottom: 85px;
 
   @media (max-width: $mobile-width) {
     background-image: none;
@@ -16,20 +16,20 @@
     line-height: 1.225;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    margin: 0 0 40px 0;
+    margin: 0 0 25px 0;
     text-align: center;
 
     @media (max-width: $mobile-width) {
       font-size: 32px;
       margin: 0 0 24px 0;
     }
-  }
 
-  br {
-    display: none;
+    br {
+      display: none;
 
-    @media (max-width: $mobile-width) {
-      display: block;
+      @media (max-width: $mobile-width) {
+        display: block;
+      }
     }
   }
 }
@@ -50,8 +50,8 @@
   max-width: 720px;
   font-size: 17px;
   line-height: 1.7;
-  margin: 0 auto 32px auto;
-  text-align: center;
+  margin: 0 auto 50px auto;
+  text-align: right;
   z-index: 1;
   opacity: 0.87;
 

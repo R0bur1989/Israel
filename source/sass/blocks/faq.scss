@@ -1,12 +1,12 @@
 .faq {
-  padding: 79px 0 124px 110px;
+  padding: 79px 0 102px 110px;
   min-height: 993px;
 
   background-image: url("../../img/bag.png"),
     url("../img/faqBg.png"),
     url("../img/faqWatercolorBg.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 0 727px, 100% 79px, 0 0;
+  background-position: 0 808px, 102% 79px, 0 0;
 
   @media (max-width: 1300px) {
     background-image: url("../../img/bag.png");
@@ -46,6 +46,7 @@
     font-weight: normal;
     padding-left: 28px;
     padding-right: 55px;
+    max-width: 450px;
 
     @media (max-width: $mobile-width) {
       max-width: 291px;
@@ -73,11 +74,11 @@
   }
 
   p {
-    display: none;
     font-size: 15px;
     line-height: 1.4;
     opacity: 0.74;
     margin: 24px 0 0 0;
+    max-width: 480px;
 
     @media (max-width: $mobile-width) {
       font-size: 14px;
@@ -102,7 +103,7 @@
 .faq__item {
   position: relative;
   padding-bottom: 32px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   border-bottom: 1px solid rgba(72, 72, 72, 0.2);
   counter-increment: questions;
   cursor: pointer;
@@ -122,4 +123,12 @@
     line-height: 1.7;
     color: $secondary-color;
   }
+
+  &:nth-child(n + 2) {
+    margin-bottom: 37px;
+  }
+}
+
+.faq__hide {
+  display: none;
 }

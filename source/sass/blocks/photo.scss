@@ -21,7 +21,7 @@
     line-height: 1.225;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    margin: 0 0 24px 0;
+    margin: 0 0 27px 0;
 
     @media (max-width: $mobile-width) {
       margin: 0 0 96px 0;
@@ -30,6 +30,7 @@
   }
 
   p {
+    max-width: 395px;
     font-size: 17px;
     line-height: 1.7;
     color: #ffffff;
@@ -52,7 +53,6 @@
     width: 230px;
     text-decoration: none;
     padding: 18px 30px 17px 30px;
-    margin: 0 auto;
 
     @media (max-width: $mobile-width) {
       width: 264px;
@@ -62,7 +62,7 @@
 
 .photo__wrapper {
   max-width: 403px;
-  margin-left: calc(72% - 201.5px);
+  margin-left: 59%;
 
   @media (max-width: $mobile-width) {
     margin: 0 auto;
