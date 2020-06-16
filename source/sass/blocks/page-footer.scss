@@ -34,7 +34,7 @@
   padding-left: 10px;
 
   @media (max-width: $mobile-width) {
-
+    padding-left: initial;
     margin-bottom: 24px;
   }
 }
@@ -50,5 +50,6 @@
 
   @media (max-width: $mobile-width) {
     margin-bottom: 28px;
+    padding-left: initial;
   }
 }

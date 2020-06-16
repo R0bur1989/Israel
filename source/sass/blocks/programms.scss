@@ -1,7 +1,7 @@
 .programms {
   background-image: url("../img/programmsSketch.png");
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: 102% 0;
   padding-top: 48px;
   margin-bottom: 31px;
 
@@ -9,7 +9,7 @@
     background-image: url("../img/programmsSketch-mobile.png");
     background-position: 100% 118px;
     padding-top: 0;
-    margin-bottom: 18px;
+    margin-bottom: 27px;
   }
 
   h2 {
@@ -37,6 +37,10 @@
     line-height: 1.214;
     letter-spacing: -0.02em;
     margin: 0 0 24px 0;
+
+    @media (max-width: $mobile-width) {
+      margin: 0 0 17px 0;
+    }
   }
 
   p {
@@ -48,12 +52,22 @@
       font-size: 14px;
       line-height: 1.6;
     }
+
+    &:last-of-type {
+      br {
+        display: none;
+
+        @media (max-width: $mobile-width) {
+          display: block;
+        }
+      }
+    }
   }
 }
 
 .programms__wrapper {
-  max-width: 910px;
-  margin-left: 15%;
+  max-width: 890px;
+  margin-left: 15.5%;
 
   @media (max-width: $mobile-width) {
     margin-left: 0;
@@ -72,12 +86,14 @@
 .programms__tabs {
   @include list-reset();
   flex-basis: 25%;
+  transform: translate(2px, -16px);
 
   @media (max-width: $mobile-width) {
     display: flex;
     align-items: center;
     overflow: hidden;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
+    transform: none;
   }
 }
 
@@ -100,6 +116,8 @@
 
   @media (max-width: $mobile-width) {
     padding: 15px 12px 14px 47px;
+    margin-left: -40px;
+    margin-right: 40px;
   }
 
   &::before {
@@ -267,6 +285,10 @@
 .programms__info {
   flex-basis: 67%;
 
+  @media (max-width: $mobile-width) {
+    padding: 0 16px;
+  }
+
   p {
     max-width: 554px;
     margin: 15px 0 19px 0;
@@ -277,10 +299,6 @@
   }
 
   h3 {
-    margin-bottom: 28px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding: 0 16px;
+    margin-bottom: 25px;
   }
 }

@@ -12,13 +12,17 @@
   margin: 0 auto 12px auto;
 
   @media (max-width: $mobile-width) {
-    padding-top: 20px;
+    padding-top: 22px;
     font-size: 14px;
+    padding-right: 0;
   }
 
   a {
+    font-weight: 500;
+    font-size: 17px;
     color: unset;
     text-decoration: none;
+    font-variant: small-caps;
   }
 }
 
@@ -59,7 +63,7 @@
   border-bottom: 1px dashed currentColor;
 
   @media (max-width: $mobile-width) {
-    margin-top: 8px;
+    margin-top: 6px;
     display: inline-block;
   }
 }

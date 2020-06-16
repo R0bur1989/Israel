@@ -2,7 +2,7 @@
   background-image: url("../img/aboutBg.png");
   background-repeat: no-repeat;
   background-position: center 160px;
-  padding-bottom: 152px;
+  padding-bottom: 146px;
 
   @media (max-width: $mobile-width) {
     background-image: url("../img/aboutBg-mobile.png");
@@ -19,16 +19,17 @@
     line-height: 1.225;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    margin: 0 0 24px 0;
+    margin: 0 0 25px 0;
 
     @media (max-width: $mobile-width) {
       font-size: 32px;
+      padding-left: 12px;
     }
   }
 
   p {
     max-width: 690px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 55px auto;
     font-size: 17px;
     line-height: 1.7;
 
@@ -71,8 +72,12 @@
   background-color: #ffffff;
   border-radius: 50%;
   box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.32);
+  transform: none;
 
   @media (max-width: $mobile-width) {
+    top: 93px;
+    left: 50%;
+    transform: translate(-50%, 0);
     width: 53.33px;
     height: 53.33px;
     padding: 18.33px 18.33px 19.17px 22.5px;

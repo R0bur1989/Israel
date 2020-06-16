@@ -20,10 +20,11 @@
 
     @media (max-width: $mobile-width) {
       font-size: 18px;
+      line-height: 21px;
       text-align: center;
       left: 0;
       right: 0;
-      bottom: 50px;
+      bottom: 55px;
       margin: auto;
       max-width: 250px;
     }
@@ -44,7 +45,7 @@
 
   img {
     @media (max-width: $mobile-width) {
-      margin-bottom: 19px;
+      margin-bottom: 11px;
     }
   }
 }
