@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 24px 110px;
+  padding: 24px 100px;
   border-top: 1px solid rgba(72, 72, 72, 0.2);
   display: flex;
   justify-content: space-between;
@@ -12,8 +12,12 @@
   }
 
   .socials {
+    width: 112px;
+    justify-content: space-between;
+
     @media (max-width: $mobile-width) {
       max-width: 136px;
+      width: initial;
       margin: 0 auto;
     }
 
@@ -27,7 +31,10 @@
 }
 
 .page-footer__logo {
+  padding-left: 10px;
+
   @media (max-width: $mobile-width) {
+
     margin-bottom: 24px;
   }
 }
@@ -39,6 +46,7 @@
   line-height: 1.5;
   text-align: center;
   opacity: 0.5;
+  padding-left: 30px;
 
   @media (max-width: $mobile-width) {
     margin-bottom: 28px;
