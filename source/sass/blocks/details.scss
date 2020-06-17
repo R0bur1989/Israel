@@ -251,6 +251,17 @@
     opacity: 0.87;
     outline: none;
 
+    @media (max-width: 1267px) {
+      flex: initial;
+      min-width: 250px;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      margin-right: initial;
+    }
+
     &::placeholder {
       opacity: 0.5;
       font-variant: small-caps;
@@ -272,16 +283,6 @@
       @media (min-width: $tablet-width) {
         display: block;
       }
-    }
-
-    @media (max-width: 1267px) {
-      flex: initial;
-      min-width: 250px;
-      margin-bottom: 8px;
-    }
-
-    @media (max-width: $mobile-width) {
-      width: 100%;
     }
   }
 
