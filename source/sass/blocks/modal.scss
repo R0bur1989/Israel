@@ -186,6 +186,10 @@
   font-size: 0;
 }
 
+.modal__form input[type="checkbox"]:checked + label::before {
+  background-color: $secondary-color;
+}
+
 .modal--accepted .button {
   margin: 0 auto;
 }
