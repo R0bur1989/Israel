@@ -3,13 +3,21 @@
   max-width: 1366px;
   margin: 0 auto;
   min-height: 895px;
-  background-image: url("../img/header.png");
+  background-image: url("../img/header.webp");
   background-repeat: no-repeat;
   background-position: center 0;
 
+  @media (-ms-high-contrast: none) {
+    background-image: url("../img/header.png");
+  }
+
   @media (max-width: 320px) {
-    background-image: url("../img/header-mobile.png");
+    background-image: url("../img/header-mobile.webp");
     min-height: 632px;
     background-position: center 20px;
+
+    @media (-ms-high-contrast: none) {
+      background-image: url("../img/header-mobile.png");
+    }
   }
 }

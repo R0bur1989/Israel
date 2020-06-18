@@ -2,22 +2,29 @@
   min-height: 594px;
   padding-top: 185px;
   margin-bottom: 70px;
-  background-image: url("../img/backpack.png"), url("../img/girl-flag-bg.png");
+  background-image: url("../img/backpack.webp"), url("../img/girl-flag-bg.webp");
   background-repeat: no-repeat;
   background-position: 0 134px, calc(100% + 15px) -14px;
 
+  @media (-ms-high-contrast: none) {
+    background-image: url("../img/backpack.png"), url("../img/girl-flag-bg.png");
+  }
+
   @media (max-width: $tablet-width) {
-    background-image: url("../img/backpack-mobile.png"),
-      url("../img/girl-flag-bg-mobile.png");
+    background-image: url("../img/backpack-mobile.webp"),
+      url("../img/girl-flag-bg-mobile.webp");
     background-position: 0 0, 100% 209px;
+
+    @media (-ms-high-contrast: none) {
+      background-image: url("../img/backpack-mobile.png"),
+        url("../img/girl-flag-bg-mobile.png");
+    }
   }
 
   @media (max-width: $mobile-width) {
     min-height: 679px;
     padding-top: 48px;
     margin-bottom: 48px;
-    background-image: url("../img/backpack-mobile.png"),
-      url("../img/girl-flag-bg-mobile.png");
     background-position: 0 0, center 91%;
   }
 

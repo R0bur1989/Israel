@@ -1,15 +1,25 @@
 .feedback {
-  background-image: url("../img/feedbackSketch.png"),
-    url("../../img/feedbackBg.png");
+  background-image: url("../img/feedbackSketch.webp"),
+    url("../img/feedbackBg.webp");
   background-repeat: no-repeat, no-repeat;
   background-position: 102% 60px, 100% 0;
   margin-bottom: 23px;
 
+  @media (-ms-high-contrast: none) {
+    background-image: url("../img/feedbackSketch.png"),
+      url("../img/feedbackBg.png");
+  }
+
   @media (max-width: $mobile-width) {
     margin-bottom: 0;
-    background-image: url("../img/feedbackSketch-mobile.png"),
-      url("../../img/feedbackBg-mobile.png");
+    background-image: url("../img/feedbackSketch-mobile.webp"),
+      url("../img/feedbackBg-mobile.webp");
     background-position: 100% 526px, 100% 686px;
+
+    @media (-ms-high-contrast: none) {
+      background-image: url("../img/feedbackSketch-mobile.png"),
+        url("../img/feedbackBg-mobile.png");
+    }
   }
 
   h2 {
@@ -44,7 +54,6 @@
     line-height: 1.7;
     opacity: 0.74;
     margin: 0 0 20px 0;
-
 
     @media (max-width: $mobile-width) {
       font-size: 16px;

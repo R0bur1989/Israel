@@ -1,8 +1,12 @@
 .life {
-  background-image: url("../img/watch.png"), url("../img/lifeBg.png");
+  background-image: url("../img/watch.webp"), url("../img/lifeBg.webp");
   background-repeat: no-repeat;
   background-position: 100% 615px, -15px -40px;
   margin-bottom: 85px;
+
+  @media (-ms-high-contrast: none) {
+    background-image: url("../img/watch.png"), url("../img/lifeBg.png");
+  }
 
   @media (max-width: $mobile-width) {
     background-image: none;

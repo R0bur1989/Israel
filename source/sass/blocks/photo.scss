@@ -2,16 +2,24 @@
   min-height: 583px;
   padding-top: 120px;
   margin-bottom: 57px;
-  background-image: url("../img/photoBg.png");
+  background-image: url("../img/photoBg.webp");
   background-repeat: no-repeat;
   background-position: center 0;
+
+  @media (-ms-high-contrast: none) {
+    background-image: url("../img/photoBg.png");
+  }
 
   @media (max-width: $mobile-width) {
     min-height: initial;
     margin-bottom: 80px;
     padding-top: 0;
-    background-image: url("../img/photoBg-mobile.png");
+    background-image: url("../img/photoBg-mobile.webp");
     background-position: center 47px;
+
+    @media (-ms-high-contrast: none) {
+      background-image: url("../img/photoBg-mobile.png");
+    }
   }
 
   h2 {

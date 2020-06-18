@@ -45,7 +45,7 @@
       <h1 class="visually-hidden">Израиль</h1>
       <div class="intro">
         <p>Учёба, путешествие и карьера для еврейской молодёжи</p>
-        <a href="#" class="intro__scroll"></a>
+        <a href="#" class="intro__scroll" aria-label="пролистать"></a>
       </div>
     </header>
     <main>
@@ -146,6 +146,7 @@
           </p>
           <form action="#" method="post" class="reply__form">
             <div class="reply__tel">
+              <label aria-label="введите Ваш телефон">
               <input
                 class="tel"
                 type="tel"
@@ -155,6 +156,7 @@
               />
               <span>Ошибка: неверный формат</span>
             </div>
+          </label>
             <button type="submit" class="button">перезвоните мне</button>
           </form>
         </div>
@@ -203,6 +205,13 @@
           <div class="gallery">
             <div class="gallery__main-photo">
               <picture>
+                <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/excursion.webp
+                "
+              />
                 <source media="(min-width: 768px)" srcset="img/excursion.png" />
                 <img class="jsImg" src="img/excursion-mobile.png" alt="" />
               </picture>
@@ -236,19 +245,52 @@
             </div>
             <ul class="gallery__photos">
               <li class="gallery__item gallery__item--small">
-                <img src="img/Hebrew.png" alt="" />
+                <picture>
+                  <source
+                  type="image/webp"
+                  srcset="
+                    img/Hebrew.webp
+                  "
+                />
+                  <img src="img/Hebrew.png" alt="" />
+                 </picture>
+
                 <p>Изучение иврита</p>
               </li>
               <li class="gallery__item gallery__item--large">
-                <img src="img/profession.png" alt="" />
+                <picture>
+                  <source
+                  type="image/webp"
+                  srcset="
+                    img/profession.webp
+                  "
+                />
+                  <img src="img/profession.png" alt="" />
+                </picture>
                 <p>Обучение современным навыкам и профессиям</p>
               </li>
               <li class="gallery__item gallery__item--large gallery__item--art">
-                <img src="img/artprojects.png" alt="" />
+                <picture>
+                  <source
+                  type="image/webp"
+                  srcset="
+                    img/artprojects.webp
+                  "
+                />
+                  <img src="img/artprojects.png" alt="" />
+                </picture>
                 <p>Совместные творческие проекты с израильской молодёжью</p>
               </li>
               <li class="gallery__item gallery__item--small">
-                <img src="img/leadership.png" alt="" />
+                <picture>
+                  <source
+                  type="image/webp"
+                  srcset="
+                    img/leadership.webp
+                  "
+                />
+                  <img src="img/leadership.png" alt="" />
+                </picture>
                 <p>Развитие лидерства</p>
               </li>
             </ul>
@@ -342,6 +384,19 @@
             <div class="feedback__image">
               <picture>
                 <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                img/feedbackImg.webp
+              "
+            />
+            <source
+              type="image/webp"
+              srcset="
+                img/feedbackImg-mobile.webp
+              "
+            />
+                <source
                   media="(min-width: 768px)"
                   srcset="img/feedbackImg.png"
                 />
@@ -371,11 +426,11 @@
                   <div>
                     <span>3</span> / <span>6</span>
                   </div>
-                  <button type="button">
+                  <button type="button" aria-label="следующий отзыв">
                     <svg width="11" height="18">
                       <use xlink:href="#icon-arrowForward"></use>
                     </svg></button
-                  ><button type="button">
+                  ><button type="button" aria-label="предыдущий отзыв">
                     <svg width="11" height="18">
                       <use xlink:href="#icon-arrowBack"></use>
                     </svg>
@@ -383,21 +438,21 @@
                 </div>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a href="#">
+                    <a href="#" aria-label="ссылка на facebook">
                       <svg width="24" height="24">
                         <use xlink:href="#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="#">
+                    <a href="#" aria-label="ссылка на twitter">
                       <svg width="24" height="24">
                         <use xlink:href="#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="#">
+                    <a href="#" aria-label="ссылка на instagram">
                       <svg width="24" height="24">
                         <use xlink:href="#icon-instagram"></use>
                       </svg>
@@ -414,7 +469,14 @@
           <h2>Узнать подробности</h2>
           <p class="details__city">Ваш город:<a href="#">новосибирск</a></p>
           <div class="details__container">
-            <img src="img/curator.png" alt="фото куратора" />
+            <picture>
+          <source
+            type="image/webp"
+            srcset="
+              img/curator.webp
+            "/>
+          <img src="img/curator.png" alt="фото куратора" />
+            </picture>
             <div class="details__info">
               <p class="details__curator">
                 <span>Ваш куратор:</span> Анна Горелик
@@ -424,21 +486,21 @@
               </p>
               <ul class="socials">
                 <li class="socials__item">
-                  <a href="#">
+                  <a href="#" aria-label="ссылка на facebook">
                     <svg width="24" height="24">
                       <use xlink:href="#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a href="#">
+                  <a href="#" aria-label="ссылка на whatsapp">
                     <svg width="24" height="24">
                       <use xlink:href="#icon-whatsapp"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a href="#">
+                  <a href="#" aria-label="ссылка на telegram">
                     <svg width="24" height="24">
                       <use xlink:href="#icon-telegram"></use>
                     </svg>
@@ -465,8 +527,8 @@
             >
           </div>
           <div class="details__inputs">
-            <input type="text" placeholder="имя" required />
-            <div class="details__tel">
+            <label aria-label="введите Ваше имя"><input type="text" placeholder="имя" required /></label>
+            <label class="details__tel" aria-label="введите Ваш телефон">
               <input
                 class="tel"
                 type="tel"
@@ -475,7 +537,7 @@
                 required
               />
               <span>Ошибка: неверный формат</span>
-            </div>
+            </label>
             <button type="submit" class="button">перезвоните мне</button>
           </div>
         </form>
@@ -483,26 +545,33 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <img src="img/masa-bw.png" alt="логотип компании" />
+          <picture>
+          <source
+            type="image/webp"
+            srcset="
+              img/masa-bw.webp
+            "/>
+            <img src="img/masa-bw.png" alt="логотип компании" />
+            </picture>
       </div>
       <p class="page-footer__copyright">Copyright someDesignCompany ©2019</p>
       <ul class="socials">
         <li class="socials__item">
-          <a href="#">
+          <a href="#" aria-label="ссылка на facebook">
             <svg width="24" height="24">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="#">
+          <a href="#" aria-label="ссылка на twitter">
             <svg width="24" height="24">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="#">
+          <a href="#" aria-label="ссылка на instagram">
             <svg width="24" height="24">
               <use xlink:href="#icon-instagram"></use>
             </svg>
