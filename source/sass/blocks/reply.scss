@@ -10,17 +10,6 @@
     background-image: url("../img/backpack.png"), url("../img/girl-flag-bg.png");
   }
 
-  @media (max-width: $tablet-width) {
-    background-image: url("../img/backpack-mobile.webp"),
-      url("../img/girl-flag-bg-mobile.webp");
-    background-position: 0 0, 100% 209px;
-
-    @media (-ms-high-contrast: none) {
-      background-image: url("../img/backpack-mobile.png"),
-        url("../img/girl-flag-bg-mobile.png");
-    }
-  }
-
   @media (max-width: $mobile-width) {
     min-height: 679px;
     padding-top: 48px;

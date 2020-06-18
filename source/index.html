@@ -208,12 +208,20 @@
                 <source
                 type="image/webp"
                 media="(min-width: 768px)"
-                srcset="
+                data-srcset="
                   img/excursion.webp
                 "
+                class="lazyload"
               />
-                <source media="(min-width: 768px)" srcset="img/excursion.png" />
-                <img class="jsImg" src="img/excursion-mobile.png" alt="" />
+                <source media="(min-width: 768px)" data-srcset="img/excursion.png"  class="lazyload"/>
+                <source
+                type="image/webp"
+                data-srcset="
+                  img/excursion-mobile.webp
+                "
+                class="lazyload"
+              />
+                <img class="jsImg" data-src="img/excursion-mobile.png" alt="" class="lazyload"/>
               </picture>
               <p class="jsGalleryP">
                 Экскурсии по Израилю<br/>
@@ -248,11 +256,12 @@
                 <picture>
                   <source
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     img/Hebrew.webp
                   "
+                  class="lazyload"
                 />
-                  <img src="img/Hebrew.png" alt="" />
+                  <img data-src="img/Hebrew.png" alt="" class="lazyload" />
                  </picture>
 
                 <p>Изучение иврита</p>
@@ -261,11 +270,12 @@
                 <picture>
                   <source
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     img/profession.webp
                   "
+                  class="lazyload"
                 />
-                  <img src="img/profession.png" alt="" />
+                  <img data-src="img/profession.png" alt="" class="lazyload"/>
                 </picture>
                 <p>Обучение современным навыкам и профессиям</p>
               </li>
@@ -273,11 +283,12 @@
                 <picture>
                   <source
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     img/artprojects.webp
                   "
+                  class="lazyload"
                 />
-                  <img src="img/artprojects.png" alt="" />
+                  <img data-src="img/artprojects.png" alt="" class="lazyload"/>
                 </picture>
                 <p>Совместные творческие проекты с израильской молодёжью</p>
               </li>
@@ -285,11 +296,12 @@
                 <picture>
                   <source
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     img/leadership.webp
                   "
+                  class="lazyload"
                 />
-                  <img src="img/leadership.png" alt="" />
+                  <img data-src="img/leadership.png" alt="" class="lazyload" />
                 </picture>
                 <p>Развитие лидерства</p>
               </li>
@@ -386,21 +398,24 @@
                 <source
               type="image/webp"
               media="(min-width: 768px)"
-              srcset="
+              data-srcset="
                 img/feedbackImg.webp
               "
+              class="lazyload"
             />
             <source
               type="image/webp"
-              srcset="
+              data-srcset="
                 img/feedbackImg-mobile.webp
               "
+              class="lazyload"
             />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/feedbackImg.png"
+                  data-srcset="img/feedbackImg.png"
+                  class="lazyload"
                 />
-                <img src="img/feedbackImg-mobile.png" alt="фото участницы" />
+                <img data-src="img/feedbackImg-mobile.png" alt="фото участницы" class="lazyload"/>
               </picture>
             </div>
             <div class="feedback__content">
@@ -472,10 +487,10 @@
             <picture>
           <source
             type="image/webp"
-            srcset="
+            data-srcset="
               img/curator.webp
-            "/>
-          <img src="img/curator.png" alt="фото куратора" />
+            " class="lazyload"/>
+          <img data-src="img/curator.png" alt="фото куратора" class="lazyload" />
             </picture>
             <div class="details__info">
               <p class="details__curator">

@@ -164,11 +164,14 @@
           <div class="gallery">
             <div class="gallery__main-photo">
               <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="
+                <source type="image/webp" media="(min-width: 768px)" data-srcset="
                   img/excursion.webp
-                ">
-                <source media="(min-width: 768px)" srcset="img/excursion.png">
-                <img class="jsImg" src="img/excursion-mobile.png" alt="">
+                " class="lazyload">
+                <source media="(min-width: 768px)" data-srcset="img/excursion.png" class="lazyload">
+                <source type="image/webp" data-srcset="
+                  img/excursion-mobile.webp
+                " class="lazyload">
+                <img class="jsImg" data-src="img/excursion-mobile.png" alt="">
               </picture>
               <p class="jsGalleryP">
                 Экскурсии по Израилю<br>
@@ -185,38 +188,38 @@
             <ul class="gallery__photos">
               <li class="gallery__item gallery__item--small">
                 <picture>
-                  <source type="image/webp" srcset="
+                  <source type="image/webp" data-srcset="
                     img/Hebrew.webp
-                  ">
-                  <img src="img/Hebrew.png" alt="">
+                  " class="lazyload">
+                  <img data-src="img/Hebrew.png" alt="" class="lazyload">
                  </picture>
 
                 <p>Изучение иврита</p>
               </li>
               <li class="gallery__item gallery__item--large">
                 <picture>
-                  <source type="image/webp" srcset="
+                  <source type="image/webp" data-srcset="
                     img/profession.webp
-                  ">
-                  <img src="img/profession.png" alt="">
+                  " class="lazyload">
+                  <img data-src="img/profession.png" alt="" class="lazyload">
                 </picture>
                 <p>Обучение современным навыкам и профессиям</p>
               </li>
               <li class="gallery__item gallery__item--large gallery__item--art">
                 <picture>
-                  <source type="image/webp" srcset="
+                  <source type="image/webp" data-srcset="
                     img/artprojects.webp
-                  ">
-                  <img src="img/artprojects.png" alt="">
+                  " class="lazyload">
+                  <img data-src="img/artprojects.png" alt="" class="lazyload">
                 </picture>
                 <p>Совместные творческие проекты с израильской молодёжью</p>
               </li>
               <li class="gallery__item gallery__item--small">
                 <picture>
-                  <source type="image/webp" srcset="
+                  <source type="image/webp" data-srcset="
                     img/leadership.webp
-                  ">
-                  <img src="img/leadership.png" alt="">
+                  " class="lazyload">
+                  <img data-src="img/leadership.png" alt="" class="lazyload">
                 </picture>
                 <p>Развитие лидерства</p>
               </li>
@@ -305,14 +308,14 @@
           <div class="feedback__container">
             <div class="feedback__image">
               <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="
+                <source type="image/webp" media="(min-width: 768px)" data-srcset="
                 img/feedbackImg.webp
-              ">
-            <source type="image/webp" srcset="
+              " class="lazyload">
+            <source type="image/webp" data-srcset="
                 img/feedbackImg-mobile.webp
-              ">
-                <source media="(min-width: 768px)" srcset="img/feedbackImg.png">
-                <img src="img/feedbackImg-mobile.png" alt="фото участницы">
+              " class="lazyload">
+                <source media="(min-width: 768px)" data-srcset="img/feedbackImg.png" class="lazyload">
+                <img data-src="img/feedbackImg-mobile.png" alt="фото участницы" class="lazyload">
               </picture>
             </div>
             <div class="feedback__content">
@@ -381,10 +384,10 @@
           <p class="details__city">Ваш город:<a href="#">новосибирск</a></p>
           <div class="details__container">
             <picture>
-          <source type="image/webp" srcset="
+          <source type="image/webp" data-srcset="
               img/curator.webp
-            ">
-          <img src="img/curator.png" alt="фото куратора">
+            " class="lazyload">
+          <img data-src="img/curator.png" alt="фото куратора" class="lazyload">
             </picture>
             <div class="details__info">
               <p class="details__curator">
