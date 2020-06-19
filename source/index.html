@@ -151,7 +151,7 @@
                 class="tel"
                 type="tel"
                 placeholder="Телефон"
-                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                pattern="+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 required
               />
               <span>Ошибка: неверный формат</span>
@@ -539,8 +539,8 @@
               <input
                 class="tel"
                 type="tel"
-                placeholder="7 (923) 41"
-                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                placeholder="телефон"
+                pattern="+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 required
               />
               <span>Ошибка: неверный формат</span>
@@ -597,14 +597,16 @@
         <form class="modal__form" action="#" method="get">
           <input type="text" name="name" placeholder="имя" required />
           <div class="modal__tel">
-            <input
+            <label aria-label="введите Ваш телефон">
+              <input
               type="tel"
               name="tel"
               class="tel"
               placeholder="телефон"
-              pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              pattern="+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"
               required
             />
+            </label>
             <span>Ошибка: неверный формат</span>
           </div>
           <button type="submit" class="button">перезвоните мне</button>

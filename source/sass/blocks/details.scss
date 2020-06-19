@@ -219,9 +219,17 @@
     width: 110px;
     height: 4px;
     position: absolute;
-    bottom: 17px;
-    left: 55px;
+    bottom: -5px;
+    left: 65px;
     background-image: url("../img/input-lines.svg");
+
+    @media (max-width: 1320px) {
+      display: none;
+    }
+
+    @media (max-width: $mobile-width) {
+      display: block;
+    }
   }
 }
 
@@ -315,16 +323,6 @@
         display: block;
       }
     }
-  }
-
-  input[type="tel"]::placeholder {
-    font-family: $font-stack;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 20px;
-    font-variant: small-caps;
-    color: #484848;
-    opacity: 0.87;
   }
 
   .button {
