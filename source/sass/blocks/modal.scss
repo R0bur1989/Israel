@@ -4,13 +4,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
   width: 480px;
   min-height: 521px;
   padding: 56px 72px 40px 48px;
   background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  z-index: 10;
 
   @media (max-width: $mobile-width) {
     top: 0;
@@ -99,6 +99,21 @@
   }
 }
 
+.overley {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-image: url("../../img/overleyBg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+
 .modal-show {
   display: block;
 }
@@ -171,7 +186,7 @@
       height: 16px;
       top: 0;
       left: 0;
-      background-image: url("../img/icon-checkbox.svg");
+      background-image: url("../img/rectangle.svg");
       background-repeat: no-repeat;
     }
   }
@@ -193,3 +208,4 @@
 .modal--accepted .button {
   margin: 0 auto;
 }
+
