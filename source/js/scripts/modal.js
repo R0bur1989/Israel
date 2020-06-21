@@ -49,6 +49,7 @@
       } else {
         if (isStorageSupport) {
           localStorage.setItem("name", userName.value);
+          localStorage.setItem("tel", phone.value);
         }
       }
     });

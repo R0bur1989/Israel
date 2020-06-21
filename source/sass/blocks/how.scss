@@ -43,7 +43,7 @@
     line-height: 1.225;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    margin: 0 0 25px 0;
+    margin: 0 0 28px 0;
     padding-left: 19px;
 
     @media (max-width: $mobile-width) {
@@ -147,14 +147,14 @@
     padding-left: 52px;
     font-size: 14px;
     line-height: 160%;
-    margin-bottom: 65px;
+    margin-bottom: 62px;
   }
 
   &:nth-of-type(n + 2) {
     margin-bottom: 45px;
 
     @media (max-width: $mobile-width) {
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
   }
 
@@ -182,7 +182,7 @@
     border-radius: 50%;
     background: #ffffff;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
-    left: 8px;
+    left: 1px;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -204,13 +204,13 @@
   font-size: 15px;
   line-height: 1.4;
   opacity: 0.5;
-  padding-left: 31px;
+  padding-left: 38px;
   margin: 0;
 
   @media (max-width: $mobile-width) {
     font-size: 14px;
     line-height: 160%;
-    padding-left: 26px;
+    padding-left: 25px;
   }
 
   &::before {

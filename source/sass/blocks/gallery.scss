@@ -28,6 +28,10 @@
       margin: auto;
       max-width: 250px;
     }
+
+    @media (max-width: $mobile-width) {
+      bottom: 45px;
+    }
   }
 }
 
