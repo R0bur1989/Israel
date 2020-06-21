@@ -8,7 +8,7 @@
     background-image: url("../img/watch.png"), url("../img/lifeBg.png");
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: "1098px") {
     background-image: none;
     margin-bottom: 0;
   }
@@ -74,7 +74,7 @@
   br {
     display: none;
 
-    @media (max-width: $mobile-width) {
+    @media (max-width: "400px") {
       display: block;
     }
   }

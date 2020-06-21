@@ -5,6 +5,10 @@
   padding-top: 48px;
   margin-bottom: 31px;
 
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/programmsSketch-mobile.png");
+  }
+
   @media (max-width: $mobile-width) {
     background-image: url("../img/programmsSketch-mobile.png");
     background-position: 100% 118px;
@@ -306,6 +310,7 @@
 
 .programms__info {
   flex-basis: 67%;
+  position: relative;
 
   @media (max-width: $mobile-width) {
     padding: 0 16px;

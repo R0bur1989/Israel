@@ -146,6 +146,14 @@
   }
 }
 
+.feedback__content {
+  a {
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
 .feedback__pagination {
   line-height: 1.5;
   opacity: 0.5;
@@ -170,5 +178,18 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      outline: none;
+
+      svg {
+        path {
+          fill: red;
+          opacity: 1;
+        }
+      }
+
+    }
   }
 }

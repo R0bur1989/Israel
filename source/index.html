@@ -207,13 +207,13 @@
               <picture>
                 <source
                 type="image/webp"
-                media="(min-width: 768px)"
+                media="(min-width: 1098px)"
                 data-srcset="
                   img/excursion.webp
                 "
                 class="lazyload"
               />
-                <source media="(min-width: 768px)" data-srcset="img/excursion.png"  class="lazyload"/>
+                <source media="(min-width: 1098px)" data-srcset="img/excursion.png"  class="lazyload"/>
                 <img class="jsImg" src="img/excursion-mobile.png" alt=""/>
               </picture>
               <p class="jsGalleryP">
@@ -380,6 +380,7 @@
             </li>
           </ol>
         </div>
+        <div class="faq__image"></div>
       </section>
       <section class="feedback">
         <div class="feedback__wrapper">
@@ -433,15 +434,16 @@
                   <div>
                     <span>3</span> / <span>6</span>
                   </div>
-                  <button type="button" aria-label="следующий отзыв">
-                    <svg width="11" height="18">
-                      <use xlink:href="#icon-arrowForward"></use>
-                    </svg></button
-                  ><button type="button" aria-label="предыдущий отзыв">
+                  <button type="button" aria-label="предыдущий отзыв">
                     <svg width="11" height="18">
                       <use xlink:href="#icon-arrowBack"></use>
                     </svg>
                   </button>
+                  <button type="button" aria-label="следующий отзыв">
+                    <svg width="11" height="18">
+                      <use xlink:href="#icon-arrowForward"></use>
+                    </svg></button
+                  >
                 </div>
                 <ul class="socials">
                   <li class="socials__item">
@@ -588,7 +590,8 @@
     </footer>
     <div class="overley">
       <article class="modal jsOrderCallWindow">
-        <button class="modal__close-button" aria-label="закрыть"></button>
+        <button class="modal__close-button" aria-label="закрыть">
+        </button>
         <h2>Заказать звонок</h2>
         <p>
           Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего

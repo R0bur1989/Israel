@@ -1,17 +1,14 @@
 .faq {
   padding: 79px 0 102px 110px;
   min-height: 993px;
-
-  background-image: url("../img/bag.png"),
-    url("../img/faqBg.png"),
-    url("../img/faqWatercolorBg.png");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 0 808px, 102% 79px, 0 0;
+  display: flex;
+  overflow: hidden;
+  background-image: url("../img/bag.png"), url("../img/faqWatercolorBg.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 808px, 0 0;
 
   @media (max-width: 1300px) {
-    background-image: url("../img/bag.png");
-    background-repeat: no-repeat;
-    background-position: 0 727px;
+    background-position: 0 727px, 0 0;
   }
 
   @media (max-width: $tablet-width) {
@@ -19,6 +16,8 @@
   }
 
   @media (max-width: $mobile-width) {
+    overflow: initial;
+    display: block;
     padding-bottom: 40px;
     min-height: 900px;
     background-position: 0 660px;
@@ -72,6 +71,10 @@
         right: 0;
       }
     }
+
+    &:hover {
+      color: $secondary-color;
+    }
   }
 
   p {
@@ -88,8 +91,21 @@
   }
 }
 
+.faq__image {
+  background-image: url("../img/faqBg.png");
+  background-repeat: no-repeat;
+  flex: 0 0 645px;
+  min-height: 803px;
+  margin-left: auto;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
 .faq__wrapper {
   max-width: 562px;
+  flex: 0 0 562px;
 
   @media (max-width: $tablet-width) {
     margin: 0 auto;

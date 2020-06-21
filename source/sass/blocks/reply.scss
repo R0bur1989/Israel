@@ -6,11 +6,27 @@
   background-repeat: no-repeat;
   background-position: 0 134px, calc(100% + 15px) -14px;
 
+
   @media (-ms-high-contrast: none) {
     background-image: url("../img/backpack.png"), url("../img/girl-flag-bg.png");
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: "1247px") {
+    min-height: initial;
+    margin-bottom: 0;
+    background-image: url("../img/backpack-mobile.webp"), url("../img/girl-flag-bg-mobile.webp");
+    background-position: 0 0, 100% center;
+
+    @media (-ms-high-contrast: none) {
+      background-image: url("../img/backpack-mobile.png"), url("../img/girl-flag-bg-mobile.png");
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-position: 0 0, 100% 0;
+  }
+
+  @media (max-width: "790px") {
     min-height: 679px;
     padding-top: 48px;
     margin-bottom: 48px;

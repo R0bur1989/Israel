@@ -18,7 +18,7 @@
     right: initial;
     max-width: 320px;
 
-    @media (max-width: $mobile-width) {
+    @media (max-width: "1098px") {
       font-size: 18px;
       line-height: 21px;
       text-align: center;
@@ -37,13 +37,13 @@
   margin-right: 17px;
   transform: translate(3px, -67px);
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1098px) {
     margin: 0 auto;
+    transform: none;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 18px;
-    transform: none;
     margin: 0 auto;
   }
 
@@ -61,9 +61,10 @@
   align-items: flex-start;
   flex-wrap: wrap;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1098px) {
     display: none;
   }
+
 
   @media (max-width: $mobile-width) {
     display: none;
