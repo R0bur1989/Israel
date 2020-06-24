@@ -43,11 +43,12 @@
 
   if (form) {
     form.addEventListener("submit", function (evt) {
-      evt.preventDefault();
       if (!check.checked) {
+        evt.preventDefault();
         alert("Нужно Ваше согласие на обработку персональных данных");
       } else if(phone.value.length < 18)
       {
+        evt.preventDefault();
         return phone.classList.add("input-error");
       }
       else {
