@@ -1,18 +1,12 @@
 .how {
-  background-image: url("../img/howtogo.webp"),
-    url("../img/stamp.webp"),
-    url("../img/howBg.webp");
+  background-image: url("../img/howtogo.jpg"),
+    url("../img/stamp.png"),
+    url("../img/howBg.png");
   background-position: 10px 75px, 100% 276px, 0 -125px;
   background-repeat: no-repeat;
   min-height: 860px;
   padding-top: 108px;
   margin-bottom: 84px;
-
-  @media (-ms-high-contrast: none) {
-    background-image: url("../img/howtogo.png"),
-      url("../img/stamp.png"),
-      url("../img/howBg.png");
-  }
 
   @media (max-width: "1130px") {
     background-position: -35px 75px, 100% 276px, -15px -125px;
@@ -22,12 +16,8 @@
     max-width: 730px;
     margin: 0 auto 80px auto;
     min-height: initial;
-    background-image: url("../img/stamp-mobile.webp");
+    background-image: url("../img/stamp-mobile.png");
     background-position: 100% 275px;
-
-    @media (-ms-high-contrast: none) {
-      background-image: url("../img/stamp-mobile.png");
-    }
   }
 
   @media (max-width: $mobile-width) {

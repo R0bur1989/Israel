@@ -1,22 +1,14 @@
 .about {
-  background-image: url("../img/aboutBg.webp");
+  background-image: url("../img/aboutBg.png");
   background-repeat: no-repeat;
   background-position: center 160px;
   padding-bottom: 146px;
 
-  @media (-ms-high-contrast: none) {
-    background-image: url("../img/aboutBg.png");
-  }
-
   @media (max-width: $mobile-width) {
-    background-image: url("../img/aboutBg-mobile.webp");
+    background-image: url("../img/aboutBg-mobile.png");
     background-position: center 60%;
     padding-bottom: 0;
     margin-bottom: 80px;
-
-    @media (-ms-high-contrast: none) {
-      background-image: url("../img/aboutBg-mobile.png");
-    }
   }
 
   h2 {
@@ -59,21 +51,13 @@
 .about__video {
   position: relative;
   min-height: 460px;
-  background-image: url("../img/photo_about.webp");
+  background-image: url("../img/photo_about.jpg");
   background-repeat: no-repeat;
-
-  @media (-ms-high-contrast: none) {
-    background-image: url("../img/photo_about.png");
-  }
 
   @media (max-width: $mobile-width) {
     min-height: 224px;
-    background-image: url("../img/photo_about-mobile.webp");
+    background-image: url("../img/photo_about-mobile.jpg");
     background-position: center 0;
-
-    @media (-ms-high-contrast: none) {
-      background-image: url("../img/photo_about-mobile.png");
-    }
   }
 }
 
