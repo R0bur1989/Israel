@@ -107,21 +107,6 @@
   }
 }
 
-.overlay {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9;
-  background-image: url("../img/overleyBg.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
-}
-
-
 .modal-show {
   display: block;
 }
@@ -131,15 +116,8 @@
   flex-basis: 100%;
 
   span {
-    display: none;
-    position: absolute;
     left: 30px;
     bottom: -40px;
-    font-size: 13px;
-    line-height: 1.5;
-
-    color: #ff0000;
-    opacity: 0.75;
   }
 
   label {
@@ -163,7 +141,6 @@
 
   input {
     width: 100%;
-    border: 2px solid #e3e3e3;
     border-radius: 80px;
     padding: 17px 40px 18px 40px;
     margin-bottom: 8px;
@@ -174,25 +151,9 @@
     opacity: 0.87;
     outline: none;
 
-    &:focus {
-      border: 2px solid #ffc341;
-    }
-
-    &:valid {
-      border: 2px solid #484848;
-    }
-
-    &:not(:placeholder-shown):invalid + span {
-      display: block;
-    }
-  }
-
-  .input-error:valid {
-    border: 2px solid #ff0000;
-  }
-
-  .input-error + span {
-    display: block;
+    // &:not(:placeholder-shown):invalid + span {
+    //   display: block;
+    // }
   }
 
   label[for="agreement"] {
@@ -234,4 +195,3 @@
 .modal--accepted .button {
   margin: 0 auto;
 }
-

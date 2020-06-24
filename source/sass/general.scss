@@ -39,3 +39,46 @@ img {
 .overflow-hidden {
   overflow: hidden;
 }
+
+input {
+  border: 2px solid #e3e3e3;
+
+  &::placeholder {
+    opacity: 0.5;
+    font-variant: small-caps;
+  }
+
+  &:focus {
+    border: 2px solid #ffc341;
+  }
+
+  &:valid {
+    border: 2px solid #484848;
+  }
+}
+
+.input-error {
+  &:valid {
+    border: 2px solid #ff0000;
+  }
+}
+
+.input-error + .error-message {
+  display: block;
+}
+
+.error-message {
+  display: none;
+  position: absolute;
+  left: 22px;
+  bottom: -40px;
+  font-size: 13px;
+  line-height: 1.5;
+
+  color: #ff0000;
+  opacity: 0.75;
+
+  @media (max-width: $mobile-width) {
+    top: -40px;
+  }
+}

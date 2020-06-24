@@ -48,7 +48,7 @@
         alert("Нужно Ваше согласие на обработку персональных данных");
       } else if(phone.value.length < 18)
       {
-        return phone.classList.add(".input-error");
+        return phone.classList.add("input-error");
       }
       else {
         if (isStorageSupport) {

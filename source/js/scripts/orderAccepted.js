@@ -23,7 +23,7 @@
       evt.preventDefault(); //снимаем класс ошибки с инпута
       if(replyPhone.value.length < 18)
       {
-        return replyPhone.classList.add(".input-error");
+        return replyPhone.classList.add("input-error");
       }
       overlay.classList.add("modal-show");
       orderAccepted.classList.add("modal-show");
@@ -35,7 +35,7 @@
       evt.preventDefault();
       if(detailsPhone.value.length < 18)
       {
-        return detailsPhone.classList.add(".input-error");
+        return detailsPhone.classList.add("input-error");
       }
       overlay.classList.add("modal-show");
       orderAccepted.classList.add("modal-show");
