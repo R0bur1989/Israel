@@ -43,12 +43,12 @@
 
   if (form) {
     form.addEventListener("submit", function (evt) {
+      phone.classList.remove("input-error");
+      evt.preventDefault();
       if (!check.checked) {
-        evt.preventDefault();
-        alert("Нужно Ваше согласие на обработку персональных данных");
+        return alert("Нужно Ваше согласие на обработку персональных данных");
       } else if(phone.value.length < 18)
       {
-        evt.preventDefault();
         return phone.classList.add("input-error");
       }
       else {
@@ -56,6 +56,8 @@
           localStorage.setItem("name", userName.value);
           localStorage.setItem("tel", phone.value);
         }
+        popup.classList.remove("modal-show");
+        popup2.classList.add("modal-show");
       }
     });
   }

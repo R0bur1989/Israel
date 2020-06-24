@@ -1,7 +1,6 @@
 (function () {
   "use strict";
   var overlay = document.querySelector(".overlay");
-  var orderForm = document.querySelector(".modal__form");
   var replyForm = document.querySelector(".reply__form");
   var detailsForm = document.querySelector(".details__form");
   var orderAccepted = document.querySelector(".jsOrderAccepted");
@@ -10,16 +9,11 @@
   var replyPhone = replyForm.querySelector("[name=replyTel]");
   var detailsPhone = detailsForm.querySelector("[name=detailsTel]");
 
-  if (orderForm) {
-    orderForm.addEventListener("submit", function (evt) {
-      evt.preventDefault();
-      orderForm.classList.remove("modal-show");
-      orderAccepted.classList.add("modal-show");
-    });
-  }
+
 
   if (replyForm) {
     replyForm.addEventListener("submit", function (evt) {
+      replyPhone.classList.remove("input-error");
       evt.preventDefault(); //снимаем класс ошибки с инпута
       if(replyPhone.value.length < 18)
       {
@@ -32,6 +26,7 @@
 
   if (detailsForm) {
     detailsForm.addEventListener("submit", function (evt) {
+      detailsPhone.classList.remove("input-error");
       evt.preventDefault();
       if(detailsPhone.value.length < 18)
       {
