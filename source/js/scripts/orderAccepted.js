@@ -22,7 +22,7 @@
 //   if (replyForm) {
 //     replyForm.addEventListener("submit", function (evt) {
 //       evt.preventDefault(); снимаем класс ошибки с инпута
-//        if(!количество символов = нужному количеству) { добавляем класс, который вешает на инпут красный текст return}
+//
 
 //       orderAccepted.classList.add("modal-show");
 //     });

@@ -133,8 +133,8 @@
   span {
     display: none;
     position: absolute;
-    left: 22px;
-    bottom: -12px;
+    left: 30px;
+    bottom: -40px;
     font-size: 13px;
     line-height: 1.5;
 
@@ -182,13 +182,17 @@
       border: 2px solid #484848;
     }
 
-    &:not(:placeholder-shown):invalid {
-      border: 2px solid #ff0000;
-    }
-
     &:not(:placeholder-shown):invalid + span {
       display: block;
     }
+  }
+
+  .input-error:valid {
+    border: 2px solid #ff0000;
+  }
+
+  .input-error + span {
+    display: block;
   }
 
   label[for="agreement"] {
