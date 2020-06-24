@@ -5,7 +5,6 @@
   background-position: 102% 60px, 100% 0;
   margin-bottom: 23px;
 
-
   @media (max-width: $mobile-width) {
     margin-bottom: 0;
     background-image: url("../img/feedbackSketch-mobile.jpg"),
@@ -65,6 +64,10 @@
     color: $heading-text-color;
 
     margin: 0 0 55px 0;
+
+    &:hover {
+      color: $secondary-color;
+    }
 
     @media (max-width: $mobile-width) {
       font-size: 16px;
@@ -135,12 +138,8 @@
   }
 }
 
-.feedback__content {
-  a {
-    &:hover {
-      color: $secondary-color;
-    }
-  }
+.feedback__item {
+  display: none;
 }
 
 .feedback__pagination {
