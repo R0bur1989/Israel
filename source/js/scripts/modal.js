@@ -3,6 +3,7 @@
   var orderCall = document.querySelector(".jsCall");
   var overlay = document.querySelector(".overlay");
   var popup = document.querySelector(".jsOrderCallWindow");
+  var popup2 = document.querySelector(".jsOrderAccepted");
   var closeButton = document.querySelector(".modal__close-button");
   var body =  document.querySelector("body");
 
@@ -42,12 +43,11 @@
 
   if (form) {
     form.addEventListener("submit", function (evt) {
+      evt.preventDefault();
       if (!check.checked) {
-        evt.preventDefault();
         alert("Нужно Ваше согласие на обработку персональных данных");
       } else if(phone.value.length < 18)
       {
-        evt.preventDefault();
         return phone.classList.add(".input-error");
       }
       else {
@@ -63,6 +63,7 @@
     closeButton.addEventListener("click", function () {
       overlay.classList.remove("modal-show");
       popup.classList.remove("modal-show");
+      popup2.classList.remove("modal-show");
       body.classList.remove("overflow-hidden");
     });
   }
@@ -72,6 +73,7 @@
       if (overlay.classList.contains("modal-show")) {
         overlay.classList.remove("modal-show");
         popup.classList.remove("modal-show");
+        popup2.classList.remove("modal-show");
         body.classList.remove("overflow-hidden");
       }
     }
@@ -82,6 +84,7 @@
     if (target.classList.contains("modal")) return;
     overlay.classList.remove("modal-show");
     popup.classList.remove("modal-show");
+    popup2.classList.remove("modal-show");
     body.classList.remove("overflow-hidden");
   });
 })();
