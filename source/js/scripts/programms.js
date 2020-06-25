@@ -1,15 +1,17 @@
 (function () {
   var tabContainer = document.querySelector(".jsTabs");
   var tabsList = document.querySelectorAll(".programms__tab");
-  var tabs = Array.from(tabsList);
+  var tabs = Array.prototype.slice.call(tabsList);
   var header = document.querySelector(".jsHeader");
   var paragraph1 = document.querySelector(".jsP1");
   var paragraph2 = document.querySelector(".jsP2");
 
   if (tabContainer) {
     tabContainer.addEventListener("click", function (evt) {
-      var tab = evt.target.closest(".programms__tab");
+      var tab = evt.target;
+      if (!tab.classList.contains("programms__tab")) return;
 
+      //closest(".programms__tab")
       if (tab.classList.contains("programms__tab--active")) return;
       tabs.forEach(function (el) {
         el.classList.remove("programms__tab--active");

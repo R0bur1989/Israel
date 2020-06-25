@@ -2,13 +2,15 @@
   "use strict";
   var slider = document.querySelector(".slider");
   var sliderList = document.querySelectorAll(".slider__item");
-  var sliders = Array.from(sliderList);
+  var sliders = Array.prototype.slice.call(sliderList);
   var image = document.querySelector(".jsImg");
   var description = document.querySelector(".jsGalleryP");
 
   if (slider) {
     slider.addEventListener("click", function (evt) {
-      var dot = evt.target.closest(".slider__item");
+      var dot = evt.target;
+      //.closest(".slider__item")
+      if (!dot.classList.contains("slider__item")) return;
 
       if (dot.classList.contains("slider__item--active")) return;
 
