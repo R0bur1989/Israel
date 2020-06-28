@@ -314,6 +314,11 @@
 .programms__info {
   flex-basis: 67%;
   position: relative;
+  display: none;
+
+  &--active {
+    display: block;
+  }
 
   @media (max-width: $mobile-width) {
     padding: 0 16px;
