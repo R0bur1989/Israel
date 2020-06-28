@@ -8,6 +8,7 @@
   var closeButton2 = orderAccepted.querySelector(".button");
   var replyPhone = replyForm.querySelector("[name=replyTel]");
   var detailsPhone = detailsForm.querySelector("[name=detailsTel]");
+  var body =  document.querySelector("body");
 
 
 
@@ -41,6 +42,7 @@
     closeButton.addEventListener("click", function () {
       orderAccepted.classList.remove("modal-show");
       overlay.classList.remove("modal-show");
+      body.classList.remove("overflow-hidden");
     });
   }
 
@@ -48,6 +50,7 @@
     closeButton2.addEventListener("click", function () {
       orderAccepted.classList.remove("modal-show");
       overlay.classList.remove("modal-show");
+      body.classList.remove("overflow-hidden");
     });
   }
 
@@ -56,6 +59,7 @@
       if (orderAccepted.classList.contains("modal-show")) {
         orderAccepted.classList.remove("modal-show");
         overlay.classList.remove("modal-show");
+        body.classList.remove("overflow-hidden");
       }
     }
   });

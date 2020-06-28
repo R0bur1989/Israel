@@ -1,7 +1,7 @@
 (function () {
   "use strict";
   var slider = document.querySelector(".slider");
-  var sliderList = document.querySelectorAll(".slider__item");
+  var sliderList = slider.querySelectorAll(".slider__item");
   var sliders = Array.prototype.slice.call(sliderList);
   var image = document.querySelector(".jsImg");
   var description = document.querySelector(".jsGalleryP");
