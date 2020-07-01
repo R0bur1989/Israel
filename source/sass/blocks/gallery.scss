@@ -30,7 +30,7 @@
     }
 
     @media (max-width: $mobile-width) {
-      bottom: 45px;
+      bottom: 22px;
     }
   }
 }
@@ -42,6 +42,7 @@
   transform: translate(3px, -67px);
 
   @media (max-width: 1098px) {
+    display: none;
     margin: 0 auto;
     transform: none;
   }
